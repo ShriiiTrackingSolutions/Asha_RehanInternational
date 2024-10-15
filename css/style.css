@@ -1,0 +1,668 @@
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Bold.woff2") format("woff2"),
+    url("../fonts/Manrope-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-Regular.woff2") format("woff2"),
+    url("../fonts/Manrope-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Manrope";
+  src: url("../fonts/Manrope-SemiBold.woff2") format("woff2"),
+    url("../fonts/Manrope-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-SemiBold.woff2") format("woff2"),
+    url("../fonts/RedHatDisplay-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-ExtraBold.woff2") format("woff2"),
+    url("../fonts/RedHatDisplay-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/RedHatDisplay-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Display";
+  src: url("../fonts/RedHatDisplay-Bold.woff2") format("woff2"),
+    url("../fonts/RedHatDisplay-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Manrope";
+  font-weight: normal;
+  line-height: 29.6px;
+  font-style: normal;
+}
+
+:root {
+  --blue: #2a6fdd;
+  --Black: #1a1a1a;
+  --grey: #74787c;
+  --green: #17be74;
+  --lightGrey: #e8e8e8;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.display-3 {
+  font-family: "Red Hat Display";
+  color: white;
+  font-size: 75px;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+.secH {
+  font-family: "Red Hat Display";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 20px;
+  letter-spacing: -0.02em;
+}
+.therdH {
+  font-family: "Manrope";
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1.4;
+}
+
+/* header css start */
+.miniheader {
+  background-color: var(--Black);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.miniheader .mailpart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+.miniheader .socialPart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 18px;
+}
+.miniheader .socialPart a {
+  color: #ffffff;
+}
+.miniheader .socialPart a:hover {
+  color: var(--blue);
+}
+.miniheader .row {
+  justify-content: space-between;
+}
+
+.mailpart a,
+.mailpart p {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0;
+  color: #ffffff;
+  position: relative;
+}
+.mailpart a::after {
+  content: "";
+  position: absolute;
+  right: -29.5px;
+  height: 5px;
+  width: 5px;
+  background-color: var(--lightGrey);
+  border-radius: 10px;
+}
+.mailpart a span,
+.mailpart p span {
+  color: var(--blue);
+  font-size: 20px;
+}
+.mailpart a:hover {
+  color: var(--blue);
+}
+.navbar-brand {
+  margin-right: 45px;
+  width: 10rem;
+}
+
+.nav-link,
+.dropdown-item {
+  font-family: "Manrope";
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  line-height: 1.4;
+  color: var(--Black);
+}
+.dropdown-item {
+  padding: 15px 20px;
+  border-bottom: 1px solid var(--lightGrey);
+}
+
+.dropend .dropdown-toggle::after {
+  content: "\f054";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 10px;
+  line-height: 1;
+  font-weight: 900;
+  font-family: "Font Awesome 6 free";
+  border: none;
+}
+.dropdown-toggle::after {
+  content: "\f107";
+  font-size: 14px;
+  line-height: 1;
+  font-weight: 900;
+  font-family: "Font Awesome 6 free";
+  border: none;
+}
+.navbar-nav {
+  gap: 20px;
+}
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: var(--blue);
+  background-color: transparent;
+}
+.dropdown-menu {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  box-shadow: none !important;
+}
+
+.headerRight {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.Makeacall {
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 15px;
+  position: relative;
+}
+.Makeacall a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.Makeacall p {
+  margin: 0;
+  font-weight: 600;
+}
+.Makeacall h6 {
+  font-family: "Red Hat Display";
+  align-items: center;
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1em;
+}
+.Makeacall .material-symbols-outlined {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: var(--green);
+  border-radius: 50px 50px 50px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnMedium {
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: var(--blue);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: capitalize;
+  position: relative;
+}
+.btnMedium i {
+  margin-left: 5px;
+}
+.btnMedium span {
+  position: relative;
+  z-index: 1;
+}
+.btnMedium::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--green);
+  -webkit-transition: linear 0.2s;
+  -o-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+.btnMedium::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: var(--green);
+  -webkit-transition: linear 0.2s;
+  -o-transition: linear 0.2s;
+  transition: linear 0.2s;
+}
+
+.btnMedium:hover {
+  color: #ffffff;
+}
+.btnMedium:hover::after,
+.btnMedium:hover::before {
+  width: 50%;
+}
+
+.btnOffcanvas {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  background-color: transparent;
+  transition: 0.3s;
+}
+.btnOffcanvas span {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: var(--Black);
+}
+.btnOffcanvas span:nth-child(1) {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.btnOffcanvas span:nth-child(2) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+}
+.btnOffcanvas span:nth-child(3) {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.btnOffcanvas span:nth-child(4) {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btnOffcanvas span:nth-child(5) {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.btnOffcanvas span:nth-child(6) {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.btnOffcanvas span:nth-child(7) {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.btnOffcanvas span:nth-child(8) {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+}
+.btnOffcanvas span:nth-child(9) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.btnOffcanvas:hover {
+  animation: rotation 0.3s 1 ease-in-out forwards;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    border-radius: 0px;
+  }
+  50% {
+    border-radius: 30px;
+  }
+  99.9% {
+    transform: rotate(-90deg);
+    border-radius: 0px;
+  }
+  100% {
+    transform: rotate(0deg);
+    border-radius: 0px;
+  }
+}
+.offcanvas-start {
+  background-color: #000000;
+}
+.offcanvas-start .btn {
+  color: #ffffff;
+  font-size: calc(15px + 0.390625vw);
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.offcanvas-start {
+  width: 30vw;
+}
+.offcanvas-header {
+  height: 45px;
+}
+.offcanvas-header .btn-close {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+  padding: 0;
+  border-radius: 0;
+  background-image: url(../image/download.svg),
+    linear-gradient(180deg, #1a1a1a 10%, #1a1a1a 80%);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: 12px, cover;
+  opacity: 1 !important;
+}
+.offcanvas.offcanvas-end {
+  width: 420px;
+}
+.offcanvas-body {
+  padding: 40px;
+}
+.offcanvas-body > p {
+  color: var(--grey);
+  margin-bottom: 40px;
+}
+.offcanvas-body .Makeacall {
+  flex-wrap: nowrap;
+}
+.offcanvas-body .Makeacall > div {
+  flex-shrink: 15;
+}
+
+.offcanvas-body .Makeacall p {
+  color: var(--Black);
+}
+
+.offcanvas-body .Makeacall .material-symbols-outlined {
+  color: var(--Black);
+  background-color: transparent;
+  font-size: 36px;
+  justify-content: start;
+}
+.Call_to_Action {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 30px;
+}
+
+nav .modal-content {
+  color: #ffffff;
+  background-color: transparent;
+  background-clip: padding-box;
+  border: none;
+  border-radius: 0;
+}
+nav .modal-header {
+  border-bottom: 0;
+}
+nav .modal-header .btn-close {
+  background: url("../image/download.svg");
+  width: 8px;
+  height: 8px;
+}
+nav .modal-body {
+  padding-right: 0;
+}
+nav .modal-body .btn[type="submit"] {
+  color: #fff;
+}
+nav .modal-body .btn[type="submit"] {
+}
+nav .modal-body .form-control {
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #fff;
+  padding: 20px 0;
+}
+nav .form-control:focus {
+  color: #ffffff;
+  box-shadow: none;
+}
+nav .form-control {
+  color: #ffffff;
+}
+nav .modal {
+  background-color: #000000;
+}
+nav .modal-body .form-control::placeholder {
+  color: #fff;
+}
+
+.navbar-nav .btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  border-color: transparent;
+}
+
+@media (min-width: 576px) {
+  nav .modal-dialog {
+    max-width: 65%;
+  }
+}
+
+/* gallery css */
+
+#gallery {
+  padding-top: 40px;
+  @media screen and (min-width: 991px) {
+    padding: 0;
+  }
+}
+#image-gallery .col-4 {
+  padding: 8px;
+}
+
+.img-wrapper {
+  position: relative;
+  margin-top: 15px;
+  img {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.img-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  i {
+    color: #fff;
+    font-size: 1em;
+  }
+}
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  img {
+    margin: 0;
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+    padding: 5%;
+    @media screen and (min-width: 768px) {
+      width: 60%;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 50%;
+    }
+  }
+}
+
+#nextButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 3em;
+  }
+}
+
+#prevButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 3em;
+  }
+}
+
+#exitButton {
+  color: #fff;
+  font-size: 2em;
+  transition: opacity 0.8s;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 3em;
+  }
+}
+
+/* header css end */
+
+/* banner css start */
+#ca1.owl-carousel .item {
+  padding: 190px 0;
+}
+#ca1.owl-carousel .item1{
+  background-image: linear-gradient(180deg, #1a1a1a8c 10%, #1a1a1a4b 80%), url(../image/slider1-scaled-1.jpg);
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+
+.Banner .bannertext1 > span {
+  display: inline-block;
+  color: #ffffff;
+  margin: 0px 0px 25px 0px;
+  padding: 10px 25px 10px 25px;
+  background-color: #ffffff26;
+}
+
+.Banner .owl-nav{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* banner css end */

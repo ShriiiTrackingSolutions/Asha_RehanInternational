@@ -1,0 +1,237 @@
+
+@media only screen and (min-width: 1920px) {}
+
+@media (max-width: 1399.98px) {
+    .awningsCanopiesCards .iconBox{
+        margin-right: 20px;
+      }
+
+      .awningsCanopiesCards .circleBtn{
+        margin-left: 15px;
+      }
+
+      .awningsCanopiesCards {
+        padding: 20px;
+    
+      }
+      .ShadeInStyle .fifthH {
+        font-size: 38px;
+    }
+    .ShadeInStyleCards {
+      padding: 40px;
+      padding-top: 100px;
+  }
+    
+ }
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {}
+
+@media only screen and (min-width: 1200px) and (max-width: 1280px) {
+  .PopularProductsCards .textPart1 p {
+    font-size: 14px;
+}
+
+.ShadeInStyle .fifthH .mainText {
+  font-size: 14px;
+}
+.ShadeInStyleCards .counter-desc {
+ font-size: 14px;
+}
+}
+
+
+
+@media (max-width: 1199.98px) { 
+    .awningsCanopies .container-fluid>.row{
+     row-gap: 30px;
+     justify-content: center;
+    }
+    .InnovativeShading .container>.row{
+        flex-direction: column-reverse;
+        row-gap: 40px;
+    }
+    .InnovativeShadingImg img {
+        width: 100%;
+    }
+    .defaultPadding {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    .PopularProducts .container>.row{
+      row-gap: 24px;
+      justify-content: center;
+    }
+
+    .WhyChooseUs .container>.row{
+      row-gap: 85px;
+    }
+    .ShadeInStyle .fifthH {
+      font-size: 25px;
+  }
+  .ShadeInStyle .fifthH .mainText {
+    font-size: 15px;
+}
+.ShadeInStyleCards .counter-desc {
+  font-size: 14px;
+}
+
+.headerRight .btnMedium{
+  display: none;
+}
+.headerRight .Makeacall {
+  display: none !important;
+}
+
+.display-3 {
+  font-size: 60px;
+}
+.secH {
+  font-size: 36px;
+}
+
+.WhyChooseUs .imagPart2 {
+  padding-left: 12px;
+}
+ }
+
+@media (max-width: 991.98px) { 
+  footer .row {
+    row-gap: 20px;
+  }
+  footer .about a:last-of-type {
+    margin-bottom: 0;
+  }
+  footer ul li {
+    margin-bottom: 5px;
+  }
+
+  .ShadeInStyle .container>.row,.NewsAndBlog .container>.row{
+    row-gap: 24px;
+    justify-content: center;
+  }
+  .headerRight .Makeacall {
+    display: flex !important;
+  }
+  .headerRight .btnOffcanvas{
+    display: none;
+  }
+.navbar-nav button{
+  display: none;
+} 
+
+.headingTitleWidget .container>div {
+  justify-content: center;
+  row-gap: 24px;
+  text-align: center;
+}
+
+.Banner .owl-nav{
+  display: none;
+}
+.copyrightSection .container>.row{
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap-reverse;
+}
+.copyrightSection ul{
+  justify-content: center;
+}
+
+ }
+
+ @media screen and (max-width: 912px) {
+  footer ul li::before {
+    display: none;
+  }
+  footer .fourthH {
+    text-align: center;
+  }
+  footer ul a {
+    display: table;
+    margin: auto;
+    width: 158PX;
+    text-align: center;
+  }
+ 
+ }
+
+
+@media (max-width: 767.98px) {
+
+  .CustomersReviews .container>.row{
+    flex-direction: column;
+    row-gap: 40px;
+  }
+  .CustomersReviews .col {
+    max-width: 100%;
+}
+
+.miniheader .mailpart {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+.mailpart a::after {
+display: none;
+}
+
+.display-3 {
+  font-size: 32px;
+}
+.secH {
+  font-size: 28px;
+}
+.therdH {
+  font-size: 22px;
+}
+.fourthH {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.defaultPadding {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.Partners {
+padding-top: 0;
+}
+.WhyChooseUs .container.defaultPadding {
+  padding-top: 332px;
+}
+.miniheaderParrent{
+  display: none;
+}
+ }
+
+@media (max-width: 575.98px) {
+  footer {
+    text-align: center;
+  }
+  footer .col-lg-4 a {
+    margin: auto;
+  }
+  footer .col-lg-4>a {
+    margin: auto;
+    margin-bottom: 16px;
+  }
+  footer .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .fIcons {
+    justify-content: center;
+  }
+  footer .row {
+    row-gap: 40px;
+  }
+
+  footer .form-check .form-check-input {
+    float: none;
+}
+
+ }
+
+@media only screen and (max-width: 479px) {
+    
+}

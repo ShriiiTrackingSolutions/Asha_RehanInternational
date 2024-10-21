@@ -81,6 +81,7 @@ body {
   --BgBlack: #0b0301;
   --Orange: #f94d1c;
   --Bglight: #F7F5F4;
+  --BgDark: #0f0f0f;
 }
 
 a {
@@ -205,6 +206,13 @@ img {
   text-transform: capitalize;
   line-height: 1.4;
   color: var(--Black);
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+  color: var(--blue);
+}
+.nav-link:focus, .nav-link:hover {
+  color: var(--blue);
 }
 .dropdown-item {
   padding: 15px 20px;
@@ -1189,6 +1197,13 @@ nav .modal-body .form-control::placeholder {
   background-color: var(--blue);
   border: 24px solid #ffffff;
   border-radius: 50px 50px 50px 50px;
+  transition: 0.3s;
+}
+
+.CircleIconWrap:hover .circleIcons{
+  color: var(--blue);
+  background-color: #ffffff;
+  border-color: var(--blue);
 }
 
 .CircleIconWrap .fifthH{
@@ -1384,13 +1399,19 @@ background-color: var(--BgBlack);
 }
 .review-card .text {
   font-weight: 500;
-  min-height: 87px;
+  min-height: 118px;
   margin-bottom: 8px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
   overflow: hidden;
   text-overflow: ellipsis;
+  transition: max-height 0.3s ease;
+}
+
+.text.expanded {
+  -webkit-line-clamp: unset;
+  max-height: 1000px; /* Adjust as needed */
 }
 
 .review-card a{
@@ -1400,6 +1421,11 @@ background-color: var(--BgBlack);
   color: var(--BgBlack);
   text-decoration: underline;
 }
+
+.read-more {
+  display: none;
+}
+
 .review-card{
   transition: all 0.3s ease-in-out;
 }
@@ -1563,40 +1589,9 @@ transform: scale(1.1);
   mask-size: contain;
   transition: 0.5s;
 }
-
 .PartnersImg:hover .overlayClip{
-background-color: #74787c00;
-}
-.PartnersImg1 .overlayClip{
-  -webkit-mask-image: url('../image/Partners/1-300x300.png');
-  mask-image: url('../image/Partners/1-300x300.png');
-}
-
-.PartnersImg2 .overlayClip{
-  -webkit-mask-image: url('../image/Partners/2-300x300.png');
-  mask-image: url('../image/Partners/2-300x300.png');
-}
-.PartnersImg3 .overlayClip{
-  -webkit-mask-image: url('../image/Partners/3-300x300.png');
-  mask-image: url('../image/Partners/3-300x300.png');
-}
-.PartnersImg3 .overlayClip{
-  -webkit-mask-image: url('../image/Partners/3-300x300.png');
-  mask-image: url('../image/Partners/3-300x300.png');
-}
-.PartnersImg4 .overlayClip{
-  -webkit-mask-image: url('../image/Partners/4-300x300.png');
-  mask-image: url('../image/Partners/4-300x300.png');
-}
-.PartnersImg5 .overlayClip{
-  -webkit-mask-image: url('../image/Partners/5-300x300.png');
-  mask-image: url('../image/Partners/5-300x300.png');
-}
-.PartnersImg6 .overlayClip{
-  -webkit-mask-image: url('../image/Partners/6-300x300.png');
-  mask-image: url('../image/Partners/6-300x300.png');
-}
-
+  background-color: #74787c00;
+  }
 
 /* companies and Partners Section End */
 
@@ -1739,3 +1734,518 @@ footer #image-gallery>.row{
 .copyrightSection .container>.row{
   justify-content: space-between;
 }
+
+
+
+/************* 
+***About Us***  
+**************/
+
+.newBanner{
+  background-image: linear-gradient(180deg, #0f0f0fcc 0%, #0f0f0fcc 100%), url('../image/page-bg-1.webp');
+  background-position: center,center;
+  background-repeat: no-repeat,no-repeat;
+  background-size: cover,cover;
+  text-align: center;
+}
+
+.breadcrumb{
+  justify-content: center;
+  margin-bottom: 0;
+}
+
+.breadcrumb-item{
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.breadcrumb-item a{
+  color: #ffffff;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #ffffff;
+}
+
+.breadcrumb-item.active {
+  color: var(--Orange);
+}
+
+
+
+/* InnovativeShading section start  */
+
+.InnovativeShading.AboutPage0 .col-xl-8 {
+  padding-right: 39px;
+}
+
+.UShape{
+    padding: 40px 55px 75px 50px;
+    border-style: solid;
+    border-width: 3px 0px 0px 0px;
+    border-color: var(--Orange);
+    border-radius: 0px 0px 130px 130px;
+    background-color: #F7F5F4;
+}
+
+.UShape .display-3{
+  color: var(--BgBlack);
+}
+
+.AboutPage0 .InnovativeShadingImg img {
+  width: auto;
+  max-width: 100%;
+  
+}
+
+.AboutPage0 .InnovativeShadingImg{
+  height: 100%;
+}
+
+hr {
+  margin: 1rem 0;
+  border-top: 1px solid #ffffff;
+  width: 80%;
+  opacity: 1;
+}
+.thumbnails-wrap{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.AboutPage0 .InnovativeShadingImg .thumbnailsAvatar {
+  width: 25%;
+  height: auto;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.AboutPage0 .InnovativeShadingImg .clientCardCircle {
+  top: unset;
+  right: unset;
+  left: 12px;
+  bottom: 25px;
+  transform: none;
+}
+
+/* InnovativeShading end  */
+
+/* who we are section start  */
+.whoWeAre{
+  background-color: var(--Bglight);
+}
+svg[role="progressbar"] circle {
+  stroke: #ffffff;
+}
+.progressImg{
+  position: relative;
+  padding-right: 40px;
+  padding-bottom: 40px;
+}
+.progressBarWrap{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  background-color: var(--Orange);
+}
+svg[role="progressbar"]  .pie-text-1{
+font-size: 16px;
+font-weight: 600;
+fill:#ffffff;
+}
+
+.progressBarWrap .fifthH{
+  color: #ffffff;
+  text-align: center;
+}
+
+.textPart2{
+  padding-left: 70px;
+}
+.verticleCardsWrap{
+  background-color: #ffffff;
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, 0.05);
+
+}
+.verticleCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 40px;
+  transition: 0.3s;
+}
+.verticleCard:hover .iconV{
+  background-color: var(--Orange);
+  color: #ffffff;
+}
+
+.verticleCardsWrap .verticleCard:not(:hover) {
+  background-color: #f8f8f8;
+}
+.iconV{
+    width: 80px;
+    height: 80px;
+    font-size: 35px;
+    color: #f94d1c;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #F94D1C1A;
+    border-radius: 50% 50% 50% 50%;
+    transition: 0.3s;
+}
+
+.VacrdText{
+  width: calc(100% - 80px);
+  padding-left: 24px;
+}
+.VacrdText p{
+  color: var(--grey);
+}
+
+.whoWeAre .container>.row{
+  align-items: center;
+}
+.headingTitleWidget.AboutPage0 .therdH a{
+color: #ffffff;
+text-decoration: underline;
+}
+.headingTitleWidget.AboutPage0 .therdH a:hover{
+  color: var(--BgBlack);
+}
+
+/* who we are section end  */
+
+
+
+/* team member section start  */
+.teamMember .member-info{
+  background-color: var(--Bglight);
+  border: 2px solid transparent;
+  padding: 40px 35px;
+}
+.teamMember .member-info:hover{
+  border: 2px solid var(--Orange);
+  background-color: #ffffff;
+}
+.teamMember .member-info a{
+  color: var(--Black);
+}
+.teamMember .fourthH.styledHeading{
+  text-align: center;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teamMember .secH{
+  text-align: center;
+}
+.teamMember .secH span{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.teamMember .member-info p{
+  margin-bottom: 0;
+  color: var(--grey)
+}
+
+/* team member section End */
+
+/* Company History section Start */
+.companyHistory {
+background-color: var(--BgBlack);
+color: #ffffff;
+}
+
+.companyHistory .fourthH.styledHeading{
+color: #ffffff;
+}
+
+.companyHistory .owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.companyHistory .owl-dots button.owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  background: #f94d1c26;
+  margin: 0 3px;
+}
+.companyHistory .owl-dots button.owl-dot.active {
+  background-color: var(--Orange);
+}
+.companyHistory .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+
+.companyHistory .owl-stage-outer{
+  position: relative;
+}
+
+.companyHistory .owl-stage-outer::after{
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: var(--grey);
+  position: absolute;
+  top: 40px;
+  z-index: -1;
+}
+
+.companyHistory .owl-nav{
+  position: absolute;
+  right: 0;
+  top: -115px;
+}
+
+.companyHistory  .owl-carousel .owl-nav button.owl-prev,.companyHistory .owl-carousel .owl-nav button.owl-next{
+  font-size: 35px;
+  width: 65px;
+  height: 65px; 
+  background-color: var(--BgDark);
+  transition: 0.3s;
+}
+.companyHistory  .owl-carousel .owl-nav button.owl-prev:hover,.companyHistory  .owl-carousel .owl-nav button.owl-next:hover{
+  background-color: var(--Orange);
+}
+
+.companyHistory .owl-nav .owl-prev{
+  margin-right: 20px;
+}
+
+.history-box{
+    position: relative;
+}
+
+.history-box .timeline-year{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--Orange);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 40px;
+}
+
+.history-box .description{
+  color: #ffffffa6;
+  margin-bottom: 0;
+}
+.history-box .timeline-content{
+  padding: 30px 35px ;
+  background-color: var(--BgDark);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.history-box .timeline-content::before{
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 0;
+  width: 30px;
+  height: 20px;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%);
+  background-color: var(--BgDark);
+  -webkit-clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  clip-path: polygon(0 0, 0% 100%, 100% 100%);
+}
+
+.history-box:hover .timeline-content,.history-box:hover .timeline-content::before{
+  background-color: #ffffff;
+}
+
+.history-box:hover .timeline-content .fourthH{
+  color: var(--BgBlack);
+}
+.history-box:hover .timeline-content p{
+  color: var(--grey);
+}
+/* Company History section End */
+
+
+/* testimonial section video start  */
+.TestimonialVideo{
+  background-color: #000000;
+}
+.TestimonialVideo.defaultPadding{
+  padding-top: 50px;
+  padding-bottom: 180px;
+}
+.TestimonialVideo .container-fluid{
+  position: relative;
+}
+
+.TestimonialVideo video {
+  max-width: 100%;
+  height: auto;
+}
+
+.VideoPlayPause{
+  border: none;
+  padding: 22px;
+  height: 70px;
+  width: 70px;
+  color: var(--Orange);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+.VideoPlayPause::before{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  -webkit-animation: pulse-border-2 1.5s linear infinite;
+  animation: pulse-border-2 1.5s linear infinite
+}
+
+.VideoPlayPause::after{
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #ffffff;
+  border-radius: 0;
+  -webkit-animation: pulse-border 1s linear infinite;
+  animation: pulse-border 1s linear infinite;
+}
+
+@keyframes pulse-border-2 {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+100% {
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  opacity: 0;
+}
+}
+
+@keyframes pulse-border {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+100% {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  opacity: 0;
+}
+}
+/* testimonial section video end */
+
+/* testimonial content section start */
+.testimonialContent{
+  padding-left: calc((100% - 1320px) / 2);
+  margin-top: -160px;
+}
+.testimonialContent .container-fluid{
+  padding-right: calc(100% - 1320px)  ;
+  background-color: var(--BgBlack);
+}
+
+#testimonial1{
+  padding: 80px;
+  padding-right: 180px;
+  color: #ffffff;
+  position: relative;
+}
+#testimonial1 .item>.therdH{
+  font-size: 34px;
+  font-weight: 500;
+  line-height: 1.35;
+}
+.authorWraper{
+  margin-top: 60px;
+  padding-top: 40px;
+  border-top: 1px solid var(--grey);
+}
+
+.authorCard, .authorWraper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.authorWraper .fa-quote-left{
+  font-size: 70px;
+  color: var(--green);
+}
+
+
+
+
+.AvatarIcon {
+  height: 80px;
+  width: 80px;
+}
+.AvatarIcon img{
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.authorCard .AvatarInfo{
+width: calc(100% - 110px);
+}
+
+.authorCard .AvatarInfo span{
+  color: var(--grey);
+}
+
+#testimonial1 .owl-dots {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+#testimonial1 .owl-dots button.owl-dot {
+  width: 8px;
+  height: 8px;
+  border: none;
+  display: inline-block;
+  background: #ffffff;
+  margin: 4px 0px;
+}
+#testimonial1 .owl-dots button.owl-dot.active {
+  background-color: var(--blue);
+}
+#testimonial1 .owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.Partners.AboutPage0 .container {
+  padding: 80px 12px;
+  background-color: transparent ;
+}
+/* testimonial content section End */

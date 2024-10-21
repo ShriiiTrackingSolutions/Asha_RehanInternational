@@ -37,6 +37,11 @@
 .ShadeInStyleCards .counter-desc {
  font-size: 14px;
 }
+
+
+.UShape .therdH {
+  font-size: 18px;
+}
 }
 
 
@@ -92,6 +97,22 @@
 .WhyChooseUs .imagPart2 {
   padding-left: 12px;
 }
+.UShape .therdH {
+  font-size: 18px;
+}
+
+.textPart2 {
+  padding-left: 12px;
+}
+.whoWeAre .container>.row{
+ row-gap: 40px;
+}
+
+.AboutPage0.headingTitleWidget .container>div {
+  justify-content: center;
+  row-gap: 24px;
+  text-align: center;
+}
  }
 
 @media (max-width: 991.98px) { 
@@ -137,6 +158,16 @@
   justify-content: center;
 }
 
+#testimonial1 .item>.therdH{
+  font-size: 26px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#testimonial1 {
+  padding: 60px;
+  padding-right: 120px;
+}
+
  }
 
  @media screen and (max-width: 912px) {
@@ -152,7 +183,23 @@
     width: 158PX;
     text-align: center;
   }
- 
+  .UShape .therdH {
+    font-size: 16px;
+  }
+  .clientCardCircle p.description{
+    font-size: 18px;
+  }
+  .AboutPage0 .InnovativeShadingImg .clientCardCircle{
+    width: 280px;
+    height: 280px;
+    padding: 40px;
+  }
+
+  .AboutPage0  .clientCardCircle p.description {
+   margin-top: 10px;
+   margin-bottom: 0;
+  }
+
  }
 
 
@@ -202,6 +249,40 @@ padding-top: 0;
 .miniheaderParrent{
   display: none;
 }
+.UShape {
+ display: none;
+}
+
+.companyHistory .owl-nav{
+display: none;
+}
+
+#testimonial1 .item>.therdH{
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+#testimonial1 {
+  padding: 20px;
+  padding-right: 40px;
+}
+.authorWraper .fa-quote-left {
+  font-size: 34px;
+  color: var(--green);
+}
+
+.VideoPlayPause {
+  border: none;
+  padding: 4px;
+  height: 35px;
+  width: 35px;
+  color: var(--Orange);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
  }
 
 @media (max-width: 575.98px) {
@@ -229,9 +310,29 @@ padding-top: 0;
   footer .form-check .form-check-input {
     float: none;
 }
+.verticleCard{
+  flex-direction: column;
+}
+.VacrdText {
+  width: 100%;
+  padding-left: 0;
+  padding-top: 24px;
+  text-align: center;
+}
+.VacrdText p{
+  margin-bottom: 0;
+}
 
+.progressBarWrap {
+scale: 0.7;
+transform-origin: bottom right;
+}
  }
 
 @media only screen and (max-width: 479px) {
-    
+
+  .progressBarWrap {
+    scale: 0.5;
+    transform-origin: bottom right;
+    }
 }

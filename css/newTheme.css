@@ -1,0 +1,112 @@
+:root {
+  --blue: #2a6fdd;
+  --Black: #1a1a1a;
+  --grey: #74787c;
+  --green: #17be74;
+  --lightGrey: #e8e8e8;
+  --BgBlack: #0b0301;
+  --Orange: #f94d1c;
+  --Bglight: #F7F5F4;
+  --BgDark: #0f0f0f;
+}
+
+
+
+.navbar-nav .nav-link.active, .navbar-nav .show > .nav-link {
+    color: var(--Orange);
+  }
+  .nav-link:focus, .nav-link:hover {
+    color: var(--Orange);
+  }
+  .dropdown-item:focus, .dropdown-item:hover {
+    color: var(--Orange);
+    background-color: transparent;
+  }
+  .dropdown-item.active, .dropdown-item:active {
+    color: var(--Orange);
+    background-color: #ffffff;
+  }
+  
+  
+  .Makeacall .material-symbols-outlined {
+    background-color: var(--BgBlack);
+  }
+  
+  .btnMedium {
+    background-color: var(--Orange);
+  }
+  
+  .btnMedium::before {
+    background-color: var(--BgDark);
+  }
+  .btnMedium::after {
+    background-color: var(--BgDark);
+  }
+  
+  .display-3{
+    font-size: 52px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    line-height: 1.2em;
+    letter-spacing: -0.02em;
+}
+
+.defaultPadding {
+    padding-top: 145px;
+    padding-bottom: 145px;
+}
+
+.fourthH.styledHeading::before {
+  background-color: var(--Orange);
+}
+
+.InnovativeShading ul li {
+  padding-left: 42px;
+  min-height: 32px;
+  display: flex;
+  align-items: center;
+  color: var(--grey);
+}
+.InnovativeShading ul li::before {
+  color: var(--Orange);
+  display: flex;
+  justify-content: center;
+  align-items: center;  line-height: 1;
+  height: 30px;
+  width: 30px;
+  background-color: #F94D1C1A;
+  border-radius: 50%;
+  font-size: 16px;
+}
+
+.clientCardCircle {
+  background-color: var(--Orange);
+}
+
+.InnovativeShading .btnLarg {
+  background-color: var(--Orange);
+  color: #ffffff;
+}
+
+.InnovativeShading .btnLarg::before {
+  background-color: var(--BgBlack);
+}
+.InnovativeShading .btnLarg::after {
+  background-color: var(--BgBlack);
+}
+
+.headingTitleWidget .defaultPadding {
+  background-color: var(--Orange);
+}
+
+.headingTitleWidget .btnLarg {
+  background-color: var(--Orange);
+}
+
+.headingTitleWidget .btnLarg::before {
+  background-color: var(--BgBlack);
+}
+
+.headingTitleWidget .btnLarg::after {
+  background-color: var(--BgBlack);
+}

@@ -110,3 +110,15 @@
 .headingTitleWidget .btnLarg::after {
   background-color: var(--BgBlack);
 }
+
+.btnLarg {
+  background-color: var(--Orange);
+  color: #ffffff;
+}
+
+.btnLarg::before {
+  background-color: var(--BgBlack);
+}
+.btnLarg::after {
+  background-color: var(--BgBlack);
+}

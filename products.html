@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="image/favicon.ico" />
-    <title>Contact Us &#8211; Asha Industries</title>
+    <title>Products &#8211; Asha Industries</title>
     <script
       src="https://kit.fontawesome.com/52ca9e0df4.js"
       crossorigin="anonymous"
@@ -15,7 +15,10 @@
     />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/github.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/github.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/newTheme.css" />
     <link rel="stylesheet" href="css/responsive.css" />
@@ -106,7 +109,7 @@
 
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle"
+                  class="nav-link dropdown-toggle active"
                   data-bs-toggle="dropdown"
                   data-bs-auto-close="outside"
                   href="#"
@@ -115,7 +118,9 @@
                 </a>
                 <ul class="dropdown-menu shadow">
                   <li>
-                    <a class="dropdown-item " href="products.html">Products page</a>
+                    <a class="dropdown-item active" href="products.html"
+                      >Products page</a
+                    >
                   </li>
                   <li class="dropend">
                     <a
@@ -210,7 +215,7 @@
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle "
+                  class="nav-link dropdown-toggle"
                   href="about.html"
                   role="button"
                   data-bs-toggle="dropdown"
@@ -220,16 +225,14 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item " href="about.html"
-                      >About Us Page</a
-                    >
+                    <a class="dropdown-item" href="about.html">About Us Page</a>
                   </li>
                   <li><a class="dropdown-item" href="#">FAQs</a></li>
                   <li><a class="dropdown-item" href="#">Blog</a></li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact Us</a>
+                <a class="nav-link" href="contact.html">Contact Us</a>
               </li>
               <li>
                 <button
@@ -455,365 +458,456 @@
     <section class="newBanner defaultPadding">
       <div class="container">
         <h1 class="display-3">
-          <span class="split-text"> Contact </span>
+          <span class="split-text"> Products </span>
         </h1>
         <nav style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
               <a href="index.html">Asha Smart Shades</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Contact</li>
+            <li class="breadcrumb-item active" aria-current="page">Products</li>
           </ol>
         </nav>
       </div>
     </section>
 
-    <!-- Get in Touch section start  -->
-<section class="getInTouch defaultPadding">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6">
-                <div class="col-xl-10 col-lg-10 gx-0">
-                    <span class="fourthH styledHeading"> Contact Us</span>
-                    <h3 class="secH">
-                      <span class="main-text"> Get in Touch with Asha Smart Shades:  </span>
-                      <span class="split-text"> Your Partner in Perfect Shading Solutions</span>
-                    </h3>
-                </div>
-                <div class="contactCardWrap">
-                   <div class="contactCard">
-                     <div class="contactIcon">
-                        <i class="fa-solid fa-location-dot"></i>
-                     </div>
-                     <div class="contactContent">
-                        <h2 class="fifthH">Location</h2>
-                        <address class="fourthH">
-                            48, GIDC Rd, Makarpura GIDC, Vadsar, Vadodara, Gujarat 390010
-                        </address>
-                     </div>
-                     <a target="_blank" class="PosAbsol" href="https://maps.app.goo.gl/Ar16m1pKY1qhrjMY6"></a>
-                   </div>
-                   <div class="contactCard">
-                    <div class="contactIcon">
-                        <i class="fa-solid fa-envelope-open-text"></i>
-                    </div>
-                    <div class="contactContent">
-                       <h2 class="fifthH">Email Address</h2>
-                       <p class="fourthH">contact@ashasmartshades.com</p>
-                    </div>
-                    <a target="_blank" class="PosAbsol" href="mailto:contact@ashasmartshades.com"></a>
-                  </div>
-                  <div class="contactCard">
-                    <div class="contactIcon">
-                        <i class="fa-solid fa-phone-volume"></i>
-                    </div>
-                    <div class="contactContent">
-                       <h2 class="fifthH"> Make A Call</h2>
-                       <p class="fourthH">+91 95747 20006</p>
-                    </div>
-                    <a target="_blank" class="PosAbsol" href=" tel:+91 9574720006"></a>
-                  </div>
-                  <div class="contactCard">
-                    <div class="contactIcon">
-                        <i class="fa-solid fa-business-time"></i>
-                    </div>
-                    <div class="contactContent">
-                       <h2 class="fifthH"> Working Hour</h2>
-                       <p class="fourthH">Sunday - Friday, 08am-05pm</p>
-                    </div>
-                  </div>
-                  
-                </div>
-                
+    <!-- Our Products section start  -->
+    <section class="OurProducts defaultPadding">
+      <div class="container">
+        <span class="fourthH styledHeading"> Our Products</span>
+        <h3 class="secH">
+          <span class="split-text">Take A Look Our Popular Products </span>
+        </h3>
+        <div class="owl-carousel owl-theme" id="ProducCarousel">
+          <div class="item">
+            <div class="productCard2">
+              <div class="ImgHoverZoom">
+                <img
+                  src="image/NewsBlog.jpeg"
+                  class="card-img-top"
+                  alt="Outdoor Space"
+                />
+                <a target="_blank" class="PosAbsol" href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+              <div class="productCardContent">
+                <span class="cardCategories"
+                  ><a href="#">Drop Arm Awning</a></span
+                >
+                <h4 class="title fourthH">
+                  <a
+                    href="https://asha.rehaninternational.com/portfolio/drop-arm-awning/"
+                    tabindex="0"
+                  >
+                    Drop Arm Awning
+                  </a>
+                </h4>
+              </div>
             </div>
-
-            <div class="col-xl-6">
-                <form class="row g-3 needs-validation ContactForm" novalidate>
-                    <div class="col-12">
-                      <input type="text" class="form-control" id="validationCustom01" placeholder="Full Name" required>
-                      <div class="invalid-feedback">
-                        This field is required
-                      </div>
-                    </div>
-              
-                    <div class="col-12">
-               
-                      <div class="input-group has-validation">
-                        <input type="email" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required>
-                        <div class="invalid-feedback">
-                          Please enter a valid email.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12">
-                        <input type="text" class="form-control" placeholder="Subject" id="validationSubject" required>
-                        <div class="invalid-feedback">
-                          This field is required
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <textarea  placeholder="Message"  cols="30" rows="4"></textarea>
-                    </div>
-                 
-                  
-                    <div class="col-12 mt-0">
-                      <button class="btnMedium" type="submit">
-                        <span>Send Message <i class="fa-solid fa-arrow-right-long"></i></span>
-                    </button>
-                    </div>
-                  </form>
+          </div>
+          <div class="item">
+            <div class="productCard2">
+              <div class="ImgHoverZoom">
+                <img
+                  src="image/NewsBlog.jpeg"
+                  class="card-img-top"
+                  alt="Outdoor Space"
+                />
+                <a target="_blank" class="PosAbsol" href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+              <div class="productCardContent">
+                <span class="cardCategories"><a href="#">Awnings</a></span>
+                <h4 class="title fourthH">
+                  <a
+                    href="https://asha.rehaninternational.com/portfolio/drop-arm-awning/"
+                    tabindex="0"
+                  >
+                    Awnings
+                  </a>
+                </h4>
+              </div>
             </div>
+          </div>
+          <div class="item">
+            <div class="productCard2">
+              <div class="ImgHoverZoom">
+                <img
+                  src="image/NewsBlog.jpeg"
+                  class="card-img-top"
+                  alt="Outdoor Space"
+                />
+                <a target="_blank" class="PosAbsol" href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+              <div class="productCardContent">
+                <span class="cardCategories"
+                  ><a href="#">Retractable Awning</a></span
+                >
+                <h4 class="title fourthH">
+                  <a
+                    href="https://asha.rehaninternational.com/portfolio/drop-arm-awning/"
+                    tabindex="0"
+                  >
+                    Retractable Awning
+                  </a>
+                </h4>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="productCard2">
+              <div class="ImgHoverZoom">
+                <img
+                  src="image/NewsBlog.jpeg"
+                  class="card-img-top"
+                  alt="Outdoor Space"
+                />
+                <a target="_blank" class="PosAbsol" href="#"
+                  ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                ></a>
+              </div>
+              <div class="productCardContent">
+                <span class="cardCategories"
+                  ><a href="#">Vertical Awning</a></span
+                >
+                <h4 class="title fourthH">
+                  <a
+                    href="https://asha.rehaninternational.com/portfolio/drop-arm-awning/"
+                    tabindex="0"
+                  >
+                    Vertical Awning
+                  </a>
+                </h4>
+              </div>
+            </div>
+          </div>
         </div>
-      
-    </div>
-</section>
+      </div>
+    </section>
+    <!-- Our Products section End -->
 
-    <!-- Get in Touch section end -->
+    <!-- Get Consultations section Start -->
+    <section class="getConsultations defaultPadding">
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-xl-6">
+            <span class="fourthH styledHeading">Get Consultations</span>
+            <h3 class="secH">
+              <span class="main-text"> Need Any Consultations For </span>
+              <span class="split-text"> Financial Consulting</span>
+            </h3>
+            <a class="btnLarg" href="contact.html">
+              <span
+                >Get A Consultation<i
+                  class="fa-solid fa-arrow-right-long"
+                  aria-hidden="true"
+                ></i
+              ></span>
+            </a>
+          </div>
+          <div class="col-xl-5 videoPng">
+            <img src="image/cta-video.webp" alt="" />
 
-<section class="mapSection">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.5048767160456!2d73.19032037586555!3d22.258857094395196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc5cc30e93e2f%3A0x922e858606bf003e!2sAsha%20Industries%20%7CAwnings%20in%20Vadodara%7C%20%7CAwnings%20manufacturer%7C!5e0!3m2!1sen!2sin!4v1729583268662!5m2!1sen!2sin" width="100%" height="780" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="VideoPlayBtn"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal2"
+            >
+              <i class="fa-solid fa-play"></i>
+            </button>
 
-</section>
-
-
-
-    
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"  aria-hidden="true" >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <iframe
+                      width="100%"
+                      height="auto"
+                      src="https://www.youtube.com/embed/Ekg3VYzYBUI?si=2w_BOVDzEQytr25Q"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Get Consultations section End -->
 
     <!-- footer section start  -->
     <footer class="defaultPadding">
-        <div class="container">
-          <div class="row justify-content-between">
-            <div class="col-lg-3 col-md-6">
-              <a class="navbar-brand" href="index.html"
-                ><img
-                  src="image/asha_industries_logo_final_files-1-01__1_-removebg-preview1-e1609849992746-300x167-1.png"
-                  alt="asha industries logo"
-              /></a>
-              <p>
-                We are a team of professionals working in this industry for 15
-                years. We have so several satisfied clients from all over India.
-              </p>
-              <div class="fIcons">
-                <a
-                  target="_blank"
-                  class="fa-brands fa-facebook-f"
-                  href="https://www.facebook.com/"
-                  aria-hidden="true"
-                ></a>
-                <a
-                  target="_blank"
-                  class="fa-brands fa-x-twitter"
-                  href="https://x.com/?lang=en"
-                  aria-hidden="true"
-                ></a>
-                <a
-                  target="_blank"
-                  class="fa-brands fa-instagram"
-                  href="https://www.instagram.com/"
-                  aria-hidden="true"
-                ></a>
-                <a
-                  target="_blank"
-                  class="fa-brands fa-linkedin-in"
-                  href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQH3HyOeX_gCXgAAAZJbhlgANMabyJfAewxAY9qdxU6QsJHvozrFZ51a8_tYQyBRvuwnA3uVR8G7943UdA0TlnFJzLvY9FQFuffSjfYFTIwQ_DjL6JSlBWNnWNmu50MKpPpSrNY=&amp;original_referer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvimal-gupta-2458b0260"
-                  aria-hidden="true"
-                ></a>
+      <div class="container">
+        <div class="row justify-content-between">
+          <div class="col-lg-3 col-md-6">
+            <a class="navbar-brand" href="index.html"
+              ><img
+                src="image/asha_industries_logo_final_files-1-01__1_-removebg-preview1-e1609849992746-300x167-1.png"
+                alt="asha industries logo"
+            /></a>
+            <p>
+              We are a team of professionals working in this industry for 15
+              years. We have so several satisfied clients from all over India.
+            </p>
+            <div class="fIcons">
+              <a
+                target="_blank"
+                class="fa-brands fa-facebook-f"
+                href="https://www.facebook.com/"
+                aria-hidden="true"
+              ></a>
+              <a
+                target="_blank"
+                class="fa-brands fa-x-twitter"
+                href="https://x.com/?lang=en"
+                aria-hidden="true"
+              ></a>
+              <a
+                target="_blank"
+                class="fa-brands fa-instagram"
+                href="https://www.instagram.com/"
+                aria-hidden="true"
+              ></a>
+              <a
+                target="_blank"
+                class="fa-brands fa-linkedin-in"
+                href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQH3HyOeX_gCXgAAAZJbhlgANMabyJfAewxAY9qdxU6QsJHvozrFZ51a8_tYQyBRvuwnA3uVR8G7943UdA0TlnFJzLvY9FQFuffSjfYFTIwQ_DjL6JSlBWNnWNmu50MKpPpSrNY=&amp;original_referer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvimal-gupta-2458b0260"
+                aria-hidden="true"
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-auto col-md-6">
+            <h2 class="fourthH">Products</h2>
+            <ul>
+              <li>
+                <a target="_blank" href="index.html">Awnings</a>
+              </li>
+              <li>
+                <a target="_blank" href="chefs.html">Canopies</a>
+              </li>
+              <li>
+                <a target="_blank" href="menu.html">Tensile Structures</a>
+              </li>
+              <li>
+                <a target="_blank" href="aboutUs.html">Gazebos & Umbrellas</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 about">
+            <h2 class="fourthH">Newsletter</h2>
+
+            <form class="g-3 needs-validation" novalidate>
+              <div class="inputField">
+                <div class="input-group has-validation">
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control"
+                    id="validationCustomUsername2"
+                    aria-describedby="inputGroupPrepend"
+                    required
+                  />
+                  <div class="invalid-feedback">
+                    Please enter your valid email.
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="col-lg-auto col-md-6">
-              <h2 class="fourthH">Products</h2>
-              <ul>
-                <li>
-                  <a target="_blank" href="index.html">Awnings</a>
-                </li>
-                <li>
-                  <a target="_blank" href="chefs.html">Canopies</a>
-                </li>
-                <li>
-                  <a target="_blank" href="menu.html">Tensile Structures</a>
-                </li>
-                <li>
-                  <a target="_blank" href="aboutUs.html">Gazebos & Umbrellas</a>
-                </li>
-              </ul>
-            </div>
-            <div class="col-lg-4 col-md-6 about">
-              <h2 class="fourthH">Newsletter</h2>
-  
-              <form class="g-3 needs-validation" novalidate>
-                <div class="inputField">
-                  <div class="input-group has-validation">
-                    <input
-                      type="email"
-                      placeholder="Email"
-                      class="form-control"
-                      id="validationCustomUsername2"
-                      aria-describedby="inputGroupPrepend"
-                      required
-                    />
-                    <div class="invalid-feedback">
-                      Please enter your valid email.
-                    </div>
+
+              <div class="col-12">
+                <div class="form-check">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="invalidCheck"
+                    required
+                  />
+                  <label class="form-check-label" for="invalidCheck">
+                    I agree to my email being stored receive
+                  </label>
+                  <div class="invalid-feedback">
+                    You must agree before submitting.
                   </div>
                 </div>
-  
-                <div class="col-12">
-                  <div class="form-check">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="invalidCheck"
-                      required
-                    />
-                    <label class="form-check-label" for="invalidCheck">
-                      I agree to my email being stored receive
-                    </label>
-                    <div class="invalid-feedback">
-                      You must agree before submitting.
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button class="btnMedium" type="submit">
-                    <span
-                      >Subscribe
-                      <i
-                        class="fa-solid fa-arrow-right-long"
-                        aria-hidden="true"
-                      ></i
-                    ></span>
-                  </button>
-                </div>
-              </form>
-            </div>
-            <div class="col-lg-3 col-md-6">
-              <h2 class="fourthH">Gallery</h2>
-  
-              <section id="gallery2">
-                <div class="container-fluid">
-                  <div id="image-gallery">
-                    <div class="row">
-                      <div class="col-4 image">
-                        <div class="img-wrapper">
-                          <a href="image/GalleryImgFooter1.jpeg"
-                            ><img
-                              src="image/GalleryImgFooter1.jpeg"
-                              class="img-responsive"
-                          /></a>
-                          <div class="img-overlay">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4 image">
-                        <div class="img-wrapper">
-                          <a href="image/GalleryImgFooter2.jpeg"
-                            ><img
-                              src="image/GalleryImgFooter2.jpeg"
-                              class="img-responsive"
-                          /></a>
-                          <div class="img-overlay">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4 image">
-                        <div class="img-wrapper">
-                          <a href="image/GalleryImgFooter3.jpeg"
-                            ><img
-                              src="image/GalleryImgFooter3.jpeg"
-                              class="img-responsive"
-                          /></a>
-                          <div class="img-overlay">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4 image">
-                        <div class="img-wrapper">
-                          <a href="image/GalleryImgFooter4.jpeg"
-                            ><img
-                              src="image/GalleryImgFooter4.jpeg"
-                              class="img-responsive"
-                          /></a>
-                          <div class="img-overlay">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4 image">
-                        <div class="img-wrapper">
-                          <a href="image/GalleryImgFooter5.jpeg"
-                            ><img
-                              src="image/GalleryImgFooter5.jpeg"
-                              class="img-responsive"
-                          /></a>
-                          <div class="img-overlay">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-4 image">
-                        <div class="img-wrapper">
-                          <a href="image/GalleryImgFooter6.jpeg"
-                            ><img
-                              src="image/GalleryImgFooter6.jpeg"
-                              class="img-responsive"
-                          /></a>
-                          <div class="img-overlay">
-                            <i class="fa-solid fa-arrow-right-long"></i>
-                          </div>
+              </div>
+              <div class="col-12">
+                <button class="btnMedium" type="submit">
+                  <span
+                    >Subscribe
+                    <i
+                      class="fa-solid fa-arrow-right-long"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h2 class="fourthH">Gallery</h2>
+
+            <section id="gallery2">
+              <div class="container-fluid">
+                <div id="image-gallery">
+                  <div class="row">
+                    <div class="col-4 image">
+                      <div class="img-wrapper">
+                        <a href="image/GalleryImgFooter1.jpeg"
+                          ><img
+                            src="image/GalleryImgFooter1.jpeg"
+                            class="img-responsive"
+                        /></a>
+                        <div class="img-overlay">
+                          <i class="fa-solid fa-arrow-right-long"></i>
                         </div>
                       </div>
                     </div>
-                    <!-- End row -->
+                    <div class="col-4 image">
+                      <div class="img-wrapper">
+                        <a href="image/GalleryImgFooter2.jpeg"
+                          ><img
+                            src="image/GalleryImgFooter2.jpeg"
+                            class="img-responsive"
+                        /></a>
+                        <div class="img-overlay">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 image">
+                      <div class="img-wrapper">
+                        <a href="image/GalleryImgFooter3.jpeg"
+                          ><img
+                            src="image/GalleryImgFooter3.jpeg"
+                            class="img-responsive"
+                        /></a>
+                        <div class="img-overlay">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 image">
+                      <div class="img-wrapper">
+                        <a href="image/GalleryImgFooter4.jpeg"
+                          ><img
+                            src="image/GalleryImgFooter4.jpeg"
+                            class="img-responsive"
+                        /></a>
+                        <div class="img-overlay">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 image">
+                      <div class="img-wrapper">
+                        <a href="image/GalleryImgFooter5.jpeg"
+                          ><img
+                            src="image/GalleryImgFooter5.jpeg"
+                            class="img-responsive"
+                        /></a>
+                        <div class="img-overlay">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4 image">
+                      <div class="img-wrapper">
+                        <a href="image/GalleryImgFooter6.jpeg"
+                          ><img
+                            src="image/GalleryImgFooter6.jpeg"
+                            class="img-responsive"
+                        /></a>
+                        <div class="img-overlay">
+                          <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <!-- End image gallery -->
+                  <!-- End row -->
                 </div>
-                <!-- End container -->
-              </section>
-            </div>
+                <!-- End image gallery -->
+              </div>
+              <!-- End container -->
+            </section>
           </div>
         </div>
-      </footer>
-      <section class="copyrightSection">
-        <div class="container">
-          <div class="row">
-            <div class="col-auto">
-              <p>
-                Copyright @2024 All Rights Reserved By Asha Smart Shades. APFP
-                Universal
-              </p>
-            </div>
-            <div class="col-auto">
-              <ul>
-                <li>
-                  <a target="_blank" href="index.html">Terms Of Use</a>
-                </li>
-                <li>
-                  <a target="_blank" href="chefs.html">Privacy </a>
-                </li>
-                <li>
-                  <a target="_blank" href="menu.html">FAQs</a>
-                </li>
-              </ul>
-            </div>
+      </div>
+    </footer>
+    <section class="copyrightSection">
+      <div class="container">
+        <div class="row">
+          <div class="col-auto">
+            <p>
+              Copyright @2024 All Rights Reserved By Asha Smart Shades. APFP
+              Universal
+            </p>
+          </div>
+          <div class="col-auto">
+            <ul>
+              <li>
+                <a target="_blank" href="index.html">Terms Of Use</a>
+              </li>
+              <li>
+                <a target="_blank" href="chefs.html">Privacy </a>
+              </li>
+              <li>
+                <a target="_blank" href="menu.html">FAQs</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </section>
-  
-      <!-- footer section end  -->
-  
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/owl.carousel.js"></script>
-      <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
-      <script src="js/script.js"></script>
+      </div>
+    </section>
+
+    <!-- footer section end  -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+
     <script>
-        
+      $("#ProducCarousel").owlCarousel({
+        loop: true,
+        margin: 30,
+        nav: false,
+        dots: false,
+        // autoplay: true,
+        // autoplayTimeout: 3000,
+        // autoplayHoverPause: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          767: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
 
       // Gallery image hover
       $(".img-wrapper").hover(
@@ -937,7 +1031,6 @@
           );
         });
       })();
-    </script>  
-
-</body>
+    </script>
+  </body>
 </html>

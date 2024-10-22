@@ -2249,3 +2249,109 @@ width: calc(100% - 110px);
   background-color: transparent ;
 }
 /* testimonial content section End */
+
+
+/******************** 
+***Contact Us Page***  
+*********************/
+
+
+/* Get in Touch section start */
+
+.contactCardWrap{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.contactCard{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+.contactCard .PosAbsol{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+.contactContent{
+  width: calc(100% - 65px);
+}
+.contactContent p,.contactContent address{
+  margin-bottom: 0;
+  color: var(--grey);
+  font-family: "Manrope";
+}
+.contactIcon {
+  height: 40px;
+  width: 40px;
+  font-size: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--Orange);
+  transition: color 0.3s;
+}
+
+
+.contactCard:hover .contactIcon{
+  color: var(--green);
+}
+.ContactForm{
+  padding: 60px;
+  background-color: #f3f3f3;
+  gap: 40px 40px;
+}
+.ContactForm input, .ContactForm textarea{
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  padding: 0 0 20px 0;
+  border-style: solid;
+  border-width: 0px 0px 1px 0px;
+  border-color: #0000001A;
+  background-color: #02010100;
+}
+.ContactForm .form-control:focus {
+  background-color: #02010100;
+  border-color: #0000001A;
+  outline: 0;
+  box-shadow: none;
+}
+.ContactForm .form-control.is-invalid:focus, .was-validated .form-control:invalid:focus {
+  box-shadow: none;
+}
+.ContactForm textarea{
+  resize: none;
+}
+.ContactForm textarea:focus-visible{
+    outline: none;
+}
+.ContactForm button{
+  border: none;
+}
+.invalid-feedback {
+  color: var(--Orange);
+}
+.ContactForm button:hover:after,.ContactForm button:hover:before{
+  width: 52%;
+}
+.ContactForm .input-group > .form-control, .input-group > .form-floating, .input-group > .form-select{
+  padding: 0 0 20px 0;
+}
+.form-control.is-invalid, .was-validated .form-control:invalid{
+  border-color: var(--Orange);
+}
+/* Get in Touch section end */
+
+/* Contact Map Section start */
+
+.mapSection iframe{
+filter: grayscale(100);
+}
+
+/* Contact Map Section end */

@@ -26,7 +26,7 @@
 
   <body>
     <!-- header start -->
-    <header>
+    <header id="main-header">
       <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"
@@ -132,15 +132,15 @@
                     >
                     <ul class="dropdown-menu shadow">
                       <li>
-                        <a class="dropdown-item" href="#"
-                          >Rectractable Awning</a
+                        <a class="dropdown-item" href="retractableAwning.html"
+                          >Retractable Awning</a
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Drop Arm Awning</a>
+                        <a class="dropdown-item" href="dropArmAwning.html">Drop Arm Awning</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Vertical Awning</a>
+                        <a class="dropdown-item" href="verticalAwning.html">Vertical Awning</a>
                       </li>
                     </ul>
                   </li>
@@ -154,15 +154,15 @@
                     >
                     <ul class="dropdown-menu shadow">
                       <li>
-                        <a class="dropdown-item" href="#">Basket Canopies</a>
+                        <a class="dropdown-item" href="basketCanopies.html">Basket Canopies</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Fixed Canopies</a>
+                        <a class="dropdown-item" href="fixedCanopies.html">Fixed Canopies</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Fixed Structures</a>
+                        <a class="dropdown-item" href="fixedStructures.html">Fixed Structures</a>
                       </li>
-                      <li><a class="dropdown-item" href="#">Walkways</a></li>
+                      <li><a class="dropdown-item" href="Walkways.html">Walkways</a></li>
                     </ul>
                   </li>
                   <li class="dropend">
@@ -175,16 +175,16 @@
                     >
                     <ul class="dropdown-menu shadow">
                       <li>
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="carParkingTensileStructures.html"
                           >Car Parking Tensile Structures</a
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Conical Tents</a>
+                        <a class="dropdown-item" href="conicalTents.html">Conical Tents</a>
                       </li>
-                      <li><a class="dropdown-item" href="#">Shade Sails</a></li>
+                      <li><a class="dropdown-item" href="shadeSails.html">Shade Sails</a></li>
                       <li>
-                        <a class="dropdown-item" href="#">Tensile Umbrellas</a>
+                        <a class="dropdown-item" href="tensileUmbrellas.html">Tensile Umbrellas</a>
                       </li>
                     </ul>
                   </li>
@@ -197,17 +197,17 @@
                       >Gazebos & Umbrellas</a
                     >
                     <ul class="dropdown-menu shadow">
-                      <li><a class="dropdown-item" href="#">Gazebo</a></li>
+                      <li><a class="dropdown-item" href="gazebo.html">Gazebo</a></li>
                       <li>
-                        <a class="dropdown-item" href="#">Garden Umbrella</a>
+                        <a class="dropdown-item" href="gardenUmbrella.html">Garden Umbrella</a>
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#"
+                        <a class="dropdown-item" href="centerPoleUmbrella.html"
                           >Center Pole Umbrella</a
                         >
                       </li>
                       <li>
-                        <a class="dropdown-item" href="#">Side Pole Umbrella</a>
+                        <a class="dropdown-item" href="sidePoleUmbrella.html">Side Pole Umbrella</a>
                       </li>
                     </ul>
                   </li>
@@ -455,7 +455,7 @@
     </header>
     <!-- header start -->
 
-    <section class="newBanner defaultPadding">
+    <section id="headBelowContent" class="newBanner defaultPadding">
       <div class="container">
         <h1 class="display-3">
           <span class="split-text"> Products </span>
@@ -493,7 +493,7 @@
               </div>
               <div class="productCardContent">
                 <span class="cardCategories"
-                  ><a href="#">Drop Arm Awning</a></span
+                  ><a href="dropArmAwning.html">Drop Arm Awning</a></span
                 >
                 <h4 class="title fourthH">
                   <a
@@ -887,6 +887,29 @@
     <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 
+<script>   //  Header script
+
+window.addEventListener('scroll', function() {
+    const header = document.getElementById('main-header');
+    const headerOffset = header.offsetTop;
+    const headerHeight = header.offsetHeight;
+    const belowContent = document.getElementById('headBelowContent');
+    const belowContentOffset = belowContent.offsetTop;
+    const belowContentHeight = belowContent.offsetHeight;
+
+    if (window.pageYOffset > headerOffset + headerHeight +5 ) {
+        header.classList.add('sticky-header', 'visible');
+        header.classList.remove('headerAnimate')
+    } else {
+      
+        if(window.pageYOffset < belowContentOffset + belowContentHeight +4){
+          header.classList.remove('sticky-header', 'visible');
+          header.classList.add('headerAnimate')
+        }
+    }
+});
+
+</script>
     <script>
       $("#ProducCarousel").owlCarousel({
         loop: true,

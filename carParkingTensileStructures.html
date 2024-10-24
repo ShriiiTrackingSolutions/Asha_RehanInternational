@@ -838,8 +838,7 @@
     <script src="https://cdn.jsdelivr.net/gh/tomik23/circular-progress-bar@latest/docs/circularProgressBar.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
 
-    <script>
-      //  Header script
+    <script>  //  Header script
 
       window.addEventListener("scroll", function () {
         const header = document.getElementById("main-header");
@@ -852,11 +851,14 @@
         if (window.pageYOffset > headerOffset + headerHeight + 5) {
           header.classList.add("sticky-header", "visible");
           header.classList.remove("headerAnimate");
+          if (window.matchMedia('(max-device-width:991.98px)').matches) { 	
+            document.getElementById("navbarSupportedContent").setAttribute( "style", "max-height: calc(100vh - 112px); overflow-y: auto;");
+          	} else{if(window.matchMedia('(max-device-width:1199.98px)').matches) {
+                document.getElementById("navbarSupportedContent").setAttribute( "style", ""); 
+            }};
+          
         } else {
-          if (
-            window.pageYOffset <
-            belowContentOffset + belowContentHeight + 4
-          ) {
+          if (  window.pageYOffset < belowContentOffset + belowContentHeight + 4  ) {
             header.classList.remove("sticky-header", "visible");
             header.classList.add("headerAnimate");
           }

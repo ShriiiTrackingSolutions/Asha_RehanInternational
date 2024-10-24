@@ -1407,29 +1407,33 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/owl.carousel.js"></script>
     <script src="js/script.js"></script>
-    <script>   //  Header script
+    <script>  //  Header script
 
-      window.addEventListener('scroll', function() {
-          const header = document.getElementById('main-header');
-          const headerOffset = header.offsetTop;
-          const headerHeight = header.offsetHeight;
-          const belowContent = document.getElementById('headBelowContent');
-          const belowContentOffset = belowContent.offsetTop;
-          const belowContentHeight = belowContent.offsetHeight;
-      
-          if (window.pageYOffset > headerOffset + headerHeight +5 ) {
-              header.classList.add('sticky-header', 'visible');
-              header.classList.remove('headerAnimate')
-          } else {
-            
-              if(window.pageYOffset < belowContentOffset + belowContentHeight +4){
-                header.classList.remove('sticky-header', 'visible');
-                header.classList.add('headerAnimate')
-              }
+      window.addEventListener("scroll", function () {
+        const header = document.getElementById("main-header");
+        const headerOffset = header.offsetTop;
+        const headerHeight = header.offsetHeight;
+        const belowContent = document.getElementById("headBelowContent");
+        const belowContentOffset = belowContent.offsetTop;
+        const belowContentHeight = belowContent.offsetHeight;
+
+        if (window.pageYOffset > headerOffset + headerHeight + 5) {
+          header.classList.add("sticky-header", "visible");
+          header.classList.remove("headerAnimate");
+          if (window.matchMedia('(max-device-width:991.98px)').matches) { 	
+            document.getElementById("navbarSupportedContent").setAttribute( "style", "max-height: calc(100vh - 112px); overflow-y: auto;");
+          	} else{if(window.matchMedia('(max-device-width:1199.98px)').matches) {
+                document.getElementById("navbarSupportedContent").setAttribute( "style", ""); 
+            }};
+          
+        } else {
+          if (  window.pageYOffset < belowContentOffset + belowContentHeight + 4  ) {
+            header.classList.remove("sticky-header", "visible");
+            header.classList.add("headerAnimate");
           }
+        }
       });
-      
-      </script>
+    </script>
 
     <script>
 

@@ -2698,3 +2698,74 @@ aspect-ratio: 16/9;
 }
 
 /* Awning type section end */
+
+
+/************** 
+***FAQs Page***  
+***************/
+.FAQsQues .fourthH.styledHeading{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.FAQsQues .secH{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.commonAccordion .fourthH{
+  font-weight: 600;
+}
+.commonAccordion p{
+  color: var(--grey);
+}
+
+
+.commonAccordion .accordion-item{
+  border: none;
+  border-bottom: var(--bs-accordion-border-width) solid var(--bs-accordion-border-color);
+}
+
+.commonAccordion .accordion-button::after {
+  content: "\f055";
+  width: unset;
+  height:unset;
+  margin-left: auto;
+  background-image: none;
+  transition: var(--bs-accordion-btn-icon-transition);
+  font-size: 18px;
+  font-weight: 900;
+  font-family: "Font Awesome 6 Free";
+}
+
+.commonAccordion .accordion-button:not(.collapsed)::after {
+  content: "\f056";
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+.CommonForm.ContactForm{
+  gap: 0;
+  row-gap: 40px;
+}
+.CommonForm.ContactForm input,.CommonForm.ContactForm  textarea{
+  width: 100%;
+  padding: 20px 25px;
+  border-width: 1px;
+  border-color: #ffffff;
+  background-color: #ffffff;
+}
+
+
+.CommonForm.ContactForm input::placeholder,
+.CommonForm.ContactForm textarea::placeholder{
+  color: #CFCFCF;
+}
+
+.CommonForm.ContactForm input:focus{
+  background-color: #ffffff;
+}
+
+.ContactForm .input-group > .form-control, .input-group > .form-floating, .input-group > .form-select {
+  padding: 20px 25px;
+}

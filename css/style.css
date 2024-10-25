@@ -2746,7 +2746,7 @@ aspect-ratio: 16/9;
 }
 .CommonForm.ContactForm{
   gap: 0;
-  row-gap: 40px;
+  row-gap: 20px;
 }
 .CommonForm.ContactForm input,.CommonForm.ContactForm  textarea{
   width: 100%;
@@ -2762,10 +2762,32 @@ aspect-ratio: 16/9;
   color: #CFCFCF;
 }
 
-.CommonForm.ContactForm input:focus{
+.CommonForm.ContactForm input:focus,.CommonForm.ContactForm textarea:focus{
   background-color: #ffffff;
+}
+.CommonForm.ContactForm .form-control:focus {
+  border-color: var(--BgBlack);
 }
 
 .ContactForm .input-group > .form-control, .input-group > .form-floating, .input-group > .form-select {
   padding: 20px 25px;
+}
+
+.CommonForm.ContactForm label{
+  font-family: "Red Hat Display";
+  font-weight: 700;
+}
+
+.CommonForm.ContactForm label span{
+ color: red;
+}
+
+.CommonForm.ContactForm  .secH{
+  margin-bottom: 20px;
+}
+
+.CommonForm.ContactForm .btnLarg{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
 }

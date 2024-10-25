@@ -640,48 +640,54 @@
 <section class="FaqForm defaultPadding pt-0">
     <div class="container">
         <form class="row g-3 needs-validation CommonForm ContactForm" novalidate="">
-            <div  class="col-12">
+            <div  class="mt-0 col-12">
                 <h2 class="secH text-center fw-bolder">Send Us Message</h2>
                 <p class="text-center">Let’s Started Conversion to get more updates. Fill Up the input fields						</p>
             </div>
-            <div class="col-md-6 pe-md-3">
-             <label for="validationCustom01" class="form-label">First name</label>
-              <input type="text" class="form-control" id="validationCustom01" placeholder="Full Name" required="">
+            <div class="mt-0 col-md-6 pe-md-3">
+             <label for="validationCustom01" class="form-label">Full name <span>*</span></label>
+              <input type="text" class="form-control" id="validationCustom01" placeholder="Ronda C. Dimick " required="">
               <div class="invalid-feedback">
                 This field is required
               </div>
             </div>
       
-            <div class="col-md-6 ps-md-3">
+            <div class="mt-0 col-md-6 ps-md-3">
        
               <div class="input-group has-validation">
-                <label for="validationCustomUsername" class="form-label">First name</label>
-                <input type="email" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required="">
+                <label for="validationCustomUsername" class="form-label">Email Address <span>*</span></label>
+                <input type="email" class="form-control" id="validationCustomUsername" placeholder="support@gmail.com " aria-describedby="inputGroupPrepend" required="">
                 <div class="invalid-feedback">
                   Please enter a valid email.
                 </div>
               </div>
             </div>
-            <div class="col-md-6 pe-md-3">
-                <input type="text" class="form-control" placeholder="Subject" id="validationSubject" required="">
+            <div class="mt-0 col-md-6 pe-md-3">
+              <label for="validationNumber" class="form-label">Phone No <span>*</span></label>
+                <input type="number" class="form-control" placeholder="000 (123) 456 88" id="validationNumber" required="">
                 <div class="invalid-feedback">
                   This field is required
                 </div>
             </div>
-            <div class="col-md-6 ps-md-3">
-                <input type="text" class="form-control" placeholder="Subject" id="validationSubject" required="">
+            <div class="mt-0 col-md-6 ps-md-3">
+              <label for="validationSubject" class="form-label">Subject <span>*</span></label>
+                <input type="text" class="form-control" placeholder="I Would Like to" id="validationSubject" required="">
                 <div class="invalid-feedback">
                   This field is required
                 </div>
             </div>
 
-            <div class="col-12">
-                <textarea placeholder="Message" cols="30" rows="4"></textarea>
+            <div class="mt-0 col-12 ">
+                <label for="Message" class="form-label">Message <span>*</span></label>
+                <textarea class="form-control" placeholder="I Would Like to" id="Message" mt-0 cols="30" rows="5"  required=""></textarea>
+                <div class="invalid-feedback">
+                  This field is required
+                </div>
             </div>
          
           
-            <div class="col-12 mt-0">
-              <button class="btnMedium" type="submit">
+            <div class="col-12">
+              <button class="btnLarg" type="submit">
                 <span>Send Message <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i></span>
             </button>
             </div>

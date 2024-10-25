@@ -171,7 +171,9 @@
   padding: 60px;
   padding-right: 120px;
 }
-
+.CommonForm.ContactForm {
+  padding: 45px;
+}
  }
 
  @media screen and (max-width: 912px) {
@@ -287,6 +289,9 @@ display: none;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+.CommonForm.ContactForm {
+  padding: 35px;
+}
  }
 
 @media (max-width: 575.98px) {
@@ -335,6 +340,7 @@ transform-origin: bottom right;
   filter: grayscale(100);
   height: 420px;
   }
+
  }
 
 @media only screen and (max-width: 479px) {
@@ -356,5 +362,9 @@ transform-origin: bottom right;
   }
   .contactContent {
     width: 100%;
+}
+
+.CommonForm.ContactForm {
+  padding: 12px;
 }
 }

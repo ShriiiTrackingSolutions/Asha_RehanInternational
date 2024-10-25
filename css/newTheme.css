@@ -122,3 +122,8 @@
 .btnLarg::after {
   background-color: var(--BgBlack);
 }
+
+.styledPara {
+  border-left: 4px solid var(--Orange);
+  color: var(--grey);
+}

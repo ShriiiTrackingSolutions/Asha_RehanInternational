@@ -82,6 +82,7 @@ body {
   --Orange: #f94d1c;
   --Bglight: #f7f5f4;
   --BgDark: #0f0f0f;
+  --offwhite: #f3f3f3
 }
 
 a {
@@ -2346,7 +2347,7 @@ svg[role="progressbar"] .pie-text-1 {
 }
 .ContactForm {
   padding: 60px;
-  background-color: #f3f3f3;
+  background-color: var(--offwhite);
   gap: 40px 40px;
 }
 .ContactForm input,
@@ -2486,7 +2487,7 @@ svg[role="progressbar"] .pie-text-1 {
 
 /* Get Consultations section start */
 .getConsultations{
-  background-color: #f3f3f3;
+  background-color: var(--offwhite);
 }
 .getConsultations .container>.row{
   align-items: center;
@@ -2790,4 +2791,343 @@ aspect-ratio: 16/9;
   display: table;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+
+/****************** 
+***Services Page***  
+*******************/
+
+.servicePage0.whoWeAre {
+  background-color: transparent;
+}
+
+
+
+.servicePage0 .pie {
+  width: 90px;
+  height: 90px;
+  position: relative;
+  margin: auto;
+}
+.servicePage0 .pie svg {
+  transform: rotate(-90deg);
+}
+.servicePage0 .pie circle {
+  stroke-width: 3.5px;
+  stroke-dasharray: 100;
+  stroke-dashoffset: 100;
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.servicePage0 .percentage{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.servicePage0  .CircleIconWrap .circleIcons {
+  font-size: 40px;
+  margin-bottom: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  color: var(--Orange);
+  background-color:#F94D1C1A;
+  border:none;
+  border-radius: 50px 50px 50px 50px;
+  transition: 0.3s;
+}
+
+.servicePage0  .CircleIconWrap:hover .circleIcons {
+  color: #ffffff;
+  background-color: var(--Orange);
+}
+
+.servicePage0 .CircleIconWrap {
+  align-items: initial;
+}
+
+/* <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    .progressBarWrap {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .pie {
+      position: relative;
+      width: 90px;
+      height: 90px;
+    }
+    .pie svg {
+      transform: rotate(-90deg);
+    }
+    .pie circle {
+      stroke-width: 5px;
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      transition: stroke-dashoffset 1s ease-out;
+    }
+    .pie .percentage {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="progressBarWrap">
+    <h2 class="fifthH">Success Rate</h2>
+    <div class="pie" data-pie='{"percent": 89}'>
+      <svg viewBox="0 0 36 36">
+        <circle cx="18" cy="18" r="15" stroke="#d2d3d4" fill="none"></circle>
+        <circle cx="18" cy="18" r="15" stroke="#00aaff" fill="none"></circle>
+      </svg>
+      <div class="percentage">0%</div>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const elements = document.querySelectorAll(".pie");
+
+      const config = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.75
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting && entry.intersectionRatio > 0.75) {
+            const pie = entry.target;
+            const percent = pie.dataset.pie ? JSON.parse(pie.dataset.pie).percent : 0;
+            const circle = pie.querySelector('circle:nth-child(2)');
+            const radius = circle.r.baseVal.value;
+            const circumference = 2 * Math.PI * radius;
+            const offset = circumference - (percent / 100) * circumference;
+
+            circle.style.strokeDasharray = `${circumference} ${circumference}`;
+            circle.style.strokeDashoffset = offset;
+
+            const percentageDiv = pie.querySelector('.percentage');
+            let currentPercentage = 0;
+            const interval = setInterval(() => {
+              if (currentPercentage >= percent) {
+                clearInterval(interval);
+              } else {
+                currentPercentage++;
+                percentageDiv.textContent = `${currentPercentage}%`;
+              }
+            }, 10);
+
+            observer.unobserve(entry.target);
+          }
+        });
+      }, config);
+
+      elements.forEach(item => observer.observe(item));
+    });
+  </script>
+</body>
+</html> */
+
+
+
+/* popular services section start */
+.styledHeading.centerStyle{
+  display: table;
+  margin-right: auto;
+  margin-left: auto;
+}
+.secH.centerStyle{
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.servicePage0.awningsCanopiesCards {
+  padding: 0px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid var(--lightGrey);
+  background-color: transparent;
+}
+.servicePage0.awningsCanopiesCards p{
+  color: var(--grey);
+}
+.servicePage0.awningsCanopiesCards .therdH a{
+  color: var(--BgBlack);
+}
+
+.servicePage0 .circleBtn {
+  background-color: transparent;
+  color: var(--Black);
+  border-radius: 50px 50px 50px 50px;
+  border-bottom: 1px solid var(--lightGrey);
+}
+.CanopiesCardswrap{
+  padding: 50px;
+  background-color: var(--offwhite);
+  row-gap: 30px;
+}
+.servicePage0.awningsCanopiesCards:hover {
+  border-bottom: 1px solid var(--Orange);
+}
+.servicePage0.awningsCanopiesCards:hover .therdH{
+  text-decoration: underline;
+  text-decoration-color: var(--BgBlack);
+}
+.servicePage0.awningsCanopiesCards .iconBox{
+  color: var(--Orange);
+}
+.servicePage0.awningsCanopiesCards:hover .circleBtn{
+  background-color: var(--Orange);
+  color: #ffffff;
+  border-bottom: 1px solid var(--Orange);
+}
+/* popular services section end */
+
+
+.servicePage0.headingTitleWidget{
+  background-image: linear-gradient(to bottom, #ffffff 50%, #0b0301 50%);
+  
+}
+
+/* Working Process section start  */
+.workingProcess {
+  background-image: url('../image/working-process-pattern-2-1.webp'), linear-gradient(#0b0301, #0b0301);
+  background-position: bottom center, center;
+  background-repeat: no-repeat , no-repeat;
+  background-size: cover , cover;
+}
+
+.workingProcess .fourthH.styledHeading{
+  color: #ffffff;
+}
+.workingProcess .secH{
+  color: #ffffff;
+}
+
+.workingProcess .CircleIconWrap{
+  text-align: center;
+}
+
+.workingProcess .CircleIconWrap .fourthH{
+  color: #ffffff;
+}
+.workingProcess .CircleIconWrap p{
+  color: #ffffffa6;
+}
+
+.workingProcess .CircleIconWrap .circleIcons {
+  width: 110px;
+  height: 110px;
+  font-size: 45px;
+  color: var(--BgBlack);
+  background-color: #ffffff;
+  border:none;
+  border-radius:50%;
+  transition: 0.3s;
+}
+
+.workingProcess .CircleIconWrap:first-child{
+  margin-top: 50px;
+}
+
+.workingProcess .CircleIconWrap:nth-child(2){
+  margin-top: 40px;
+}
+
+.workingProcess .CircleIconWrap:nth-child(3){
+  margin-top: 90px;
+}
+
+.workingProcess .CircleIconWrap:nth-child(4){
+  margin-top: 87px;
+}
+.CircleIconWrap .circleIcons{
+  position: relative;
+}
+.workingProcessLine{
+  background-image: url('../image/working-process-line-1.webp');
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.circleIcons .badge{
+  position: absolute;
+    left: -5px;
+    top: -5px;
+    width: 40px;
+    height: 40px;
+    font-family: "Red Hat Display";
+    font-size: 16px;
+    font-weight: 700;
+    background-color: var(--Orange);
+    color: #ffffff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.workingProcess .CircleIconWrap:hover .circleIcons{
+  color: #ffffff;
+  background-color: var(--Orange);
+}
+.workingProcess .CircleIconWrap:hover .circleIcons .badge{
+  background-color: #ffffff;
+  color: var(--BgBlack);
+}
+/* Working Process section end  */
+
+
+.FAQ_section.servicePage0 .textCard{
+  background: linear-gradient(#f3633cb9,#f3633cb9), url('../image/faq-pattern.webp'), linear-gradient(#f94d1c,#f94d1c);
+  background-position: center, center, center;
+  background-repeat: no-repeat , no-repeat ,no-repeat;
+  background-size: cover , cover, cover;
+}
+
+.FAQ_section.servicePage0 .btnLarg{
+  background-color: var(--BgDark);
+  transition: 0.3s;
+}
+
+.FAQ_section.servicePage0 .btnLarg::before{
+  background-color: #ffffff;
+}
+.FAQ_section.servicePage0 .btnLarg::after{
+  background-color: #ffffff;
+}
+.FAQ_section.servicePage0 .btnLarg:hover{
+ color: var(--BgDark);
+}
+
+
+.getConsultations.servicePage0 {
+  padding: 60px 0;
+  background: url('../image/cta-bg-two-1.webp'), linear-gradient(#f3f3f3,#f3f3f3);
+  background-position: bottom center, center;
+  background-repeat: no-repeat , no-repeat;
+  background-size: cover , cover;
 }

@@ -57,7 +57,26 @@
     }
     .InnovativeShadingImg img {
         width: 100%;
+  
     }
+    .InnovativeShadingImg img.ImgMrg{
+      margin-right: 0;
+    }
+
+   .circleAdd .clientCardCircle p.description{
+      font-size: 18px;
+    }
+.circleAdd .clientCardCircle{
+      width: 280px;
+      height: 280px;
+      padding: 40px;
+    }
+  
+.circleAdd .clientCardCircle p.description {
+     margin-top: 10px;
+     margin-bottom: 0;
+    }
+  
     .defaultPadding {
       padding-top: 100px;
       padding-bottom: 100px;
@@ -219,6 +238,7 @@
    margin-bottom: 0;
   }
 
+
  }
 
 
@@ -230,6 +250,10 @@
   }
   .CustomersReviews .col {
     max-width: 100%;
+}
+.circleAdd{
+  gap: unset;
+  justify-content: space-between;
 }
 
 .miniheader .mailpart {
@@ -357,7 +381,9 @@ transform-origin: bottom right;
  }
 
 @media only screen and (max-width: 479px) {
-
+.circleAdd .clientCardCircle{
+  display: none;
+}
   .progressBarWrap {
     scale: 0.5;
     transform-origin: bottom right;

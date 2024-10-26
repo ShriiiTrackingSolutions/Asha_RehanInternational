@@ -892,7 +892,7 @@ nav .modal-body .form-control::placeholder {
 
 .divider {
   display: block;
-  margin: 15px 0;
+  margin: 15px auto;
   width: 80%;
   height: 1px;
   background-color: #d9d9d9;
@@ -933,18 +933,7 @@ nav .modal-body .form-control::placeholder {
   margin-right: 30px;
 }
 
-.iconBox::after {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  content: "";
-  width: 100%;
-  height: calc(100% - 20px);
-  background-color: #00000000;
-  -webkit-clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
-  clip-path: polygon(0 35%, 100% 0, 100% 100%, 0% 100%);
-  z-index: -1;
-}
+
 .awningsCanopiesCards:hover {
   background-color: var(--blue);
 }
@@ -954,9 +943,6 @@ nav .modal-body .form-control::placeholder {
 }
 .awningsCanopiesCards:hover .divider {
   background-color: #fff;
-}
-.awningsCanopiesCards:hover .iconBox::after {
-  background-color: rgba(255, 255, 255, 0.15);
 }
 
 /* Awnings Canopies cards End  */
@@ -1027,6 +1013,9 @@ nav .modal-body .form-control::placeholder {
 .InnovativeShadingImg img {
   width: 72%;
 }
+.InnovativeShadingImg img.ImgMrg {
+  margin-right: 25%;
+}
 
 .InnovativeShadingImg {
   position: relative;
@@ -1057,6 +1046,23 @@ nav .modal-body .form-control::placeholder {
   padding: 60px;
   color: #ffffff;
   background-color: var(--green);
+}
+
+.circleAdd{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 100px;
+}
+.circleAdd .clientCardCircle {
+  position: static;
+  top: 50%;
+  right: 0;
+  transform:none;
+  width: 280px;
+  height: 280px;
 }
 
 .clientCardCircle img {
@@ -1119,6 +1125,7 @@ nav .modal-body .form-control::placeholder {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 .PopularProducts .fourthH.styledHeading::before {
   background-color: var(--blue);
@@ -1138,7 +1145,7 @@ nav .modal-body .form-control::placeholder {
   z-index: 2;
 }
 .PopularProductsCards .textPart1 img {
-  width: 100px;
+  width: 120px;
   margin-bottom: 40px;
 }
 .PopularProductsCards .textPart1 {
@@ -1268,6 +1275,22 @@ nav .modal-body .form-control::placeholder {
   height: 100%;
   width: 100%;
 }
+
+.homePage0 .circleIcons{
+  width: 110px;
+  height: 110px;
+  background-color: var(--blue);
+  border: none;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.homePage0 .circleIcons img{
+transition: 0.3s;
+}
+.homePage0 .CircleIconWrap:hover .circleIcons img {
+scale: 1.2;
+}
+
 .WhyChooseUs .container.defaultPadding {
   padding-top: 420px;
 }

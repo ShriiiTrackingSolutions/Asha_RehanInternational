@@ -142,7 +142,9 @@
 .servicePage0 .styledPara + .row{
   row-gap: 24px;
 }
-
+.blogPage0.NewsAndBlog .NewsCardBody {
+  padding: 34px 40px;
+}
  }
 
 @media (max-width: 991.98px) { 
@@ -328,6 +330,20 @@ display: none;
 }
 .CommonForm.ContactForm {
   padding: 35px;
+}
+.blogPage0.NewsAndBlog .NewsCard {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+}
+.blogPage0.NewsAndBlog .ImgHoverZoom {
+  width: 100%;
+  aspect-ratio: 850 / 638;;
+}
+.blogPage0.NewsAndBlog .NewsCardBody {
+  padding: 30px 34px;
+  width: 100%;
 }
  }
 

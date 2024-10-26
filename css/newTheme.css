@@ -127,3 +127,26 @@
   border-left: 4px solid var(--Orange);
   color: var(--grey);
 }
+
+.NewsCardBody .badge {
+  background-color: var(--Orange);
+  padding: 8px 15px;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 25px;
+  transition: background-color 0.3s;
+}
+
+.NewsCardBody .badge:hover{
+  background-color: var(--BgBlack);
+}
+.NewsCardBody .text-muted:hover {
+  color: var(--Orange) !important;
+}
+
+.NewsCard .fourthH:hover a {
+  text-decoration: none;
+  color: var(--Orange);
+}

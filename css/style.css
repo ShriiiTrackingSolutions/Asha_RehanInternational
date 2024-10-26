@@ -3154,3 +3154,35 @@ aspect-ratio: 16/9;
   background-repeat: no-repeat , no-repeat;
   background-size: cover , cover;
 }
+
+
+/************** 
+***Blog Page***  
+***************/
+
+.blogPage0.NewsAndBlog .NewsCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.blogPage0.NewsAndBlog .col-12{
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, .07);
+  box-shadow: 0px 4px 60px 0px rgba(0, 0, 0, .07);
+  padding: 10px;
+}
+.blogPage0.NewsAndBlog .ImgHoverZoom{
+  width: 45%;
+  aspect-ratio: unset;
+  object-fit: cover;
+}
+.blogPage0.NewsAndBlog .ImgHoverZoom img{
+  object-fit: cover;
+  height: 100%;
+}
+
+.blogPage0.NewsAndBlog .NewsCardBody{
+  padding: 40px 50px;
+  width: 55%;
+}

@@ -145,6 +145,9 @@
 .blogPage0.NewsAndBlog .NewsCardBody {
   padding: 34px 40px;
 }
+.blogDetailPage0 .display-3{
+  font-size: 42px;
+}
  }
 
 @media (max-width: 991.98px) { 
@@ -345,6 +348,37 @@ display: none;
   padding: 30px 34px;
   width: 100%;
 }
+.blogDetailPage0 .display-3{
+  font-size: 36px;
+}
+
+.postBottomLinks {
+  row-gap: 24px;
+}
+.adminCard {
+  flex-direction: column;
+}
+.authorDesc {
+  width: 100%;
+  text-align: center;
+  margin-top: 24px;
+}
+.postThubCard {
+  max-width: 100%;
+  align-items: center;
+  margin-top: 40px;
+}
+.commentCard {
+  flex-direction: column;
+  align-items: center;
+}
+.commentCard .commentDesc {
+  width: 100%;
+  margin-top: 24px;
+}
+
+
+
  }
 
 @media (max-width: 575.98px) {
@@ -392,6 +426,10 @@ transform-origin: bottom right;
 .mapSection iframe{
   filter: grayscale(100);
   height: 420px;
+  }
+
+  .blogDetailPage0 .display-3{
+    font-size: 32px;
   }
 
  }

@@ -198,7 +198,7 @@ img {
 /* Initial header styling */
 #main-header {
   transition: all 0.5s ease;
-  z-index: 25;
+  z-index: 1055;
 }
 
 /* Hidden when out of view */
@@ -667,7 +667,7 @@ nav .modal-body .form-control::placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1046;
+  z-index: 1056;
 
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -2705,6 +2705,10 @@ svg[role="progressbar"] .pie-text-1 {
   object-position: center;
 }
 
+.awningPage0#generalQue .item img {
+  object-position: top;
+}
+
 #generalQuestions ul {
   color: var(--grey);
 }
@@ -3414,6 +3418,11 @@ transition: 0.3s;
 }
 .readMoreBtn:hover{
   color: var(--Orange);
+}
+
+
+.commentSection{
+  margin-top: 80px;
 }
 
 .commentCard {

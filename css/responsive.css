@@ -54,6 +54,9 @@
      row-gap: 30px;
      justify-content: center;
     }
+    .awningType .display-3{
+      font-size: 52px;
+    }
     .InnovativeShading .container>.row{
         flex-direction: column-reverse;
         row-gap: 40px;
@@ -75,6 +78,7 @@
       padding: 40px;
     }
   
+ 
 .circleAdd .clientCardCircle p.description {
      margin-top: 10px;
      margin-bottom: 0;
@@ -390,7 +394,13 @@ display: none;
   margin-top: 24px;
 }
 
+.awningType .listFlex {
+  gap: unset;
+}
 
+.awningType .listFlex ul {
+  flex-basis: 50%;
+}
 
  }
 
@@ -444,6 +454,13 @@ transform-origin: bottom right;
   .blogDetailPage0 .display-3{
     font-size: 32px;
   }
+
+  .awningType .listFlex ul {
+    flex-basis: 100%;
+  }
+  .awningType .display-3 {
+    font-size: 40px;
+}
 
  }
 

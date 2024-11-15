@@ -1649,20 +1649,6 @@ nav .modal-body .form-control::placeholder {
   position: relative;
 }
 
-.PartnersImg .overlayClip {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: #74787c;
-  mask-repeat: no-repeat;
-  mask-size: contain;
-  transition: 0.5s;
-}
-.PartnersImg:hover .overlayClip {
-  background-color: #74787c00;
-}
 
 /* companies and Partners Section End */
 

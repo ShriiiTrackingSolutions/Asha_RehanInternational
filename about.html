@@ -433,37 +433,6 @@
 
           <div class="col-xl-4 InnovativeShadingImg">
             <img src="image/about-img-six.webp" alt="Shades Image" />
-            <div class="clientCardCircle">
-              <h2 class="fourthH">
-                We've More Then <br />
-                256+ Clients
-              </h2>
-              <hr />
-              <div class="thumbnails-wrap">
-                <img
-                  class="thumbnailsAvatar"
-                  src="image/avatar-1.webp"
-                  alt="Avatar Image"
-                />
-                <img
-                  class="thumbnailsAvatar"
-                  src="image/avatar-2.webp"
-                  alt="Avatar Image"
-                />
-                <img
-                  class="thumbnailsAvatar"
-                  src="image/avatar-3.webp"
-                  alt="Avatar Image"
-                />
-                <img
-                  class="thumbnailsAvatar"
-                  src="image/avatar-4.webp"
-                  alt="Avatar Image"
-                />
-              </div>
-              <p class="description">Maulin Amin</p>
-              <span class="note">CEO &amp; Founder</span>
-            </div>
           </div>
         </div>
       </div>
@@ -477,11 +446,26 @@
           <div class="col-xl-6">
             <div class="progressImg">
               <img src="image/why-choose-us-3.webp" alt="People are in a meating">
+
               <div class="progressBarWrap">
                 <h2 class="fifthH">Success Rate</h2>
-                <div class="pie" data-pie='{ "percent": 89 }'>
+                <div class="pie" data-pie='{ "percent": 97 }'>
               </div>
             </div>
+
+
+            <!-- <div class="progressBarWrap">
+              <h2 class="fifthH">Success Rate</h2>
+              <div class="pie" data-pie='{ "percent": 89 }'>
+                  <svg viewBox="0 0 36 36">
+                      <circle cx="18" cy="18" r="15" stroke="#d2d3d4" fill="none"></circle>
+                      <circle cx="18" cy="18" r="15" stroke="#ffffff" fill="none"></circle>
+                  </svg>
+                   <div class="percentage">97%</div>
+            </div>
+          </div> -->
+
+
           </div>
         </div>
         <div class="col-xl-6 textPart2">
@@ -663,7 +647,7 @@
           </div>
           <div class="counter-icon"><i class="flaticon flaticon-start-up"></i></div>
           <div class="StyleCardsHead counter-section" id="counter-section-1">
-            <h2 class="fifthH"><div class="col-auto g-0"><span id="counter-1">358</span>+</div><span class="mainText col g-0">Trusted by Diverse Clients</span></h2>
+            <h2 class="fifthH"><div class="col-auto g-0"><span id="counter-1">999</span>+</div><span class="mainText col g-0">Trusted by Diverse Clients</span></h2>
           </div>
           <p class="counter-desc">Asha Smart Shades has been recognized for its outstanding contributions to the industry with several awards and accolades.</p>
         </div>
@@ -674,7 +658,7 @@
             <img src="image/costumer copy.png" alt="Icon">
           </div>
           <div class="StyleCardsHead counter-section" id="counter-section-2">
-            <h2 class="fifthH"><div class="col-auto g-0"><span id="counter-2">963</span>+</div><span class="mainText col g-0">High Success Rate and Customer Satisfaction</span></h2>
+            <h2 class="fifthH"><div class="col-auto g-0"><span id="counter-2">97</span>%</div><span class="mainText col g-0">High Success Rate, and Customer Satisfaction</span></h2>
           </div>
           <p class="counter-desc">We boast an impressive success rate with numerous completed projects and a high level of customer satisfaction.</p>
         </div>
@@ -685,9 +669,9 @@
             <img src="image/trophy copy.png" alt="Icon">
           </div>
           <div class="StyleCardsHead counter-section" id="counter-section-3">
-            <h2 class="fifthH"><div class="col-auto g-0"><span id="counter-3">532</span>%</div><span class="mainText col g-0">Award-Winning Excellence</span></h2>
+            <h2 class="fifthH"><div class="col-auto g-0"><span id="counter-3">99</span>%</div><span class="mainText col g-0">Clients Refer Other Clients To Us</span></h2>
           </div>
-          <p class="counter-desc">Asha Smart Shades has been recognized for its outstanding contributions to the industry with several awards and accolades.</p>
+          <p class="counter-desc">Discover premium shading solutions trusted by clients like you. Visit Asha Smart Shades’ website for innovative designs today!</p>
         </div>
       </div>
     </div>
@@ -1400,8 +1384,8 @@ $('#testimonial1').owlCarousel({
 // increasing number animation start
 
 let countersStarted2 = [false, false, false];
-        const targets2 = [358, 963, 532]; // Targets for each counter
-        const durations2 = [4000, 100, 4000]; // Duration for each counter
+        const targets2 = [999, 97, 99]; // Targets for each counter
+        const durations2 = [0, 4000, 4000]; // Duration for each counter
 
         const startCounter2 = (index) => {
             let count = 0;
@@ -1496,5 +1480,48 @@ let countersStarted2 = [false, false, false];
 
 });
     </script>
+
+<!-- <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".pie");
+
+    const config = {
+      root: null,
+      rootMargin: "0px",
+      threshold: 0.75
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && entry.intersectionRatio > 0.75) {
+          const pie = entry.target;
+          const percent = pie.dataset.pie ? JSON.parse(pie.dataset.pie).percent : 0;
+          const circle = pie.querySelector('circle:nth-child(2)');
+          const radius = circle.r.baseVal.value;
+          const circumference = 2 * Math.PI * radius;
+          const offset = circumference - (percent / 100) * circumference;
+
+          circle.style.strokeDasharray = `${circumference} ${circumference}`;
+          circle.style.strokeDashoffset = offset;
+
+          const percentageDiv = pie.querySelector('.percentage');
+          let currentPercentage = 0;
+          const interval = setInterval(() => {
+            if (currentPercentage >= percent) {
+              clearInterval(interval);
+            } else {
+              currentPercentage++;
+              percentageDiv.textContent = `${currentPercentage}%`;
+            }
+          }, 10);
+
+          observer.unobserve(entry.target);
+        }
+      });
+    }, config);
+
+    elements.forEach(item => observer.observe(item));
+  });
+</script> -->
   </body>
 </html>

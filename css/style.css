@@ -1868,21 +1868,9 @@ hr {
   align-items: center;
   justify-content: space-between;
 }
-.AboutPage0 .InnovativeShadingImg .thumbnailsAvatar {
-  width: 25%;
-  height: auto;
-  aspect-ratio: 1;
-  object-fit: cover;
-  border-radius: 50%;
-}
 
-.AboutPage0 .InnovativeShadingImg .clientCardCircle {
-  top: unset;
-  right: unset;
-  left: 12px;
-  bottom: 25px;
-  transform: none;
-}
+
+
 
 /* InnovativeShading end  */
 
@@ -1964,14 +1952,27 @@ svg[role="progressbar"] .pie-text-1 {
 .whoWeAre .container > .row {
   align-items: center;
 }
+.headingTitleWidget.AboutPage0{
+background-color: var(--blue);
+}
+.headingTitleWidget.AboutPage0 .container-fluid {
+  background-color: var(--blue);
+}
 .headingTitleWidget.AboutPage0 .therdH a {
   color: #ffffff;
   text-decoration: underline;
 }
 .headingTitleWidget.AboutPage0 .therdH a:hover {
-  color: var(--BgBlack);
+  color: var(--BgDark);
 }
 
+.headingTitleWidget.AboutPage0 .btnLarg{
+  background-color: var(--blue);
+}
+.headingTitleWidget.AboutPage0 .btnLarg::before,
+.headingTitleWidget.AboutPage0 .btnLarg::after {
+  background-color: var(--green);
+}
 /* who we are section end  */
 
 /* team member section start  */

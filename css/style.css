@@ -2140,6 +2140,15 @@ background-color: var(--blue);
   padding-top: 50px;
   padding-bottom: 180px;
 }
+#player-wrapper iframe {
+  pointer-events: none; /* Disable interaction with the video */
+}
+
+#player-wrapper.playing iframe {
+  pointer-events: auto; /* Enable interaction only during playback */
+}
+
+
 .TestimonialVideo .container-fluid {
   position: relative;
 }
@@ -2147,6 +2156,11 @@ background-color: var(--blue);
 .TestimonialVideo video {
   max-width: 100%;
   height: auto;
+}
+.TestimonialVideo iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
 }
 
 .VideoPlayPause {
@@ -2234,6 +2248,7 @@ background-color: var(--blue);
   font-size: 34px;
   font-weight: 500;
   line-height: 1.35;
+  
 }
 .authorWraper {
   margin-top: 60px;
@@ -2267,10 +2282,11 @@ background-color: var(--blue);
 .authorCard .AvatarInfo {
   width: calc(100% - 110px);
 }
-
-.authorCard .AvatarInfo span {
-  color: var(--grey);
+.authorCard .AvatarInfo .fourthH{
+  text-wrap-mode: nowrap;
 }
+
+
 
 #testimonial1 .owl-dots {
   text-align: center;

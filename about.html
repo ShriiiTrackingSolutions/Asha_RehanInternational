@@ -589,6 +589,10 @@
       <span class="main-text"> 15 Years of Innovation, Quality, and Excellence in  </span>
       <span class="split-text">Shading Solutions </span>
     </h3>
+
+
+
+    
     <div class="owl-carousel owl-theme" id="ca4">
       <div class="item">
         <div class="history-box">
@@ -682,10 +686,8 @@
 
 <!-- testimonial video section  start  -->
 
-<section class="TestimonialVideo defaultPadding">
+<!-- <section class="TestimonialVideo defaultPadding">
 <div class="container-fluid">
-
-  <!-- onClick="playPause(document.getElementById("video"));"  -->
  
   <button id="VideoPlayPause" class="VideoPlayPause" onclick="playPause(video1)">
     <i class="fa-solid fa-play"></i>
@@ -696,9 +698,28 @@
     <source src="image/Videos/Captain-America-Brave-New-World-Final-Trailer-_4K_.webm" type="video/webm">
     Your browser does not support HTML5 video.
   </video>
-
+ 
 </div>
+</section> -->
+
+<section class="TestimonialVideo defaultPadding">
+  <div class="container-fluid">
+    <!-- Custom Play/Pause Button -->
+    <button id="VideoPlayPause" class="VideoPlayPause">
+      <i class="fa-solid fa-play"></i>
+    </button>
+
+    <!-- YouTube Video Embed -->
+    <div id="player-wrapper">
+      <div id="player"></div>
+    </div>
+  </div>
 </section>
+
+
+
+<!-- <iframe  id="video1" width="100%" height="auto" src="https://www.youtube.com/embed/h5NGNygvz2I?si=eaMcq5P-lqfBrxKV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
 
 <!-- testimonial video section End -->
 
@@ -707,15 +728,15 @@
 <div class="container-fluid">
   <div class="owl-carousel owl-theme" id="testimonial1">
     <div class="item">
-      <p class="therdH">I recently had a retractable awning installed by Asha Smart Shades, and I couldn't be happier with the result. The quality of the awning is outstanding, and it has significantly improved the comfort and usability of my terrace. The team was professional, punctual, and paid great attention to detail during the installation. I highly recommend Asha Smart Shades for anyone looking for top-notch shading solutions.</p>
+      <p class="therdH">We got this awning done through Asha industries. The quality of material and workmanship is remarkable. Nice services being provided by this gentleman Mr. Maulin Amin. Full marks for hos work, workmanship and attitude. Great.</p>
       <div class="authorWraper">
         <div class="authorCard">
           <div class="AvatarIcon">
-            <img src="image/avatar-7.webp" alt="Avatar Image">
+            <img src="image/avather-img-2.png" alt="Avatar Image">
           </div>
           <div class="AvatarInfo">
-            <h2 class="fourthH">Rajesh Patel, Vadodara</h2>
-            <span>CEO & Founder</span>
+            <h2 class="fourthH">Pravin Vaghela</h2>
+  
           </div>
         </div>
         <div>
@@ -724,15 +745,17 @@
       </div>
     </div>
     <div class="item">
-      <p class="therdH">We chose Asha Smart Shades to install fixed canopies over our windows and balcony, and the transformation has been incredible. Not only do the canopies provide excellent protection from the sun and rain, but they also add a stylish touch to our home. The entire process, from consultation to installation, was seamless, and the team was extremely knowledgeable and friendly. Asha Smart Shades exceeded our expectations in every way.</p>
+      <p class="therdH">Very prompt reply. I ordered instead of polycarbonate - because polycarbonate makes noises when pigeons seat over them, so also during rains.
+        I like the awning fabric from Ferrari Sege.
+        Great quality of awnings.</p>
       <div class="authorWraper">
         <div class="authorCard">
           <div class="AvatarIcon">
-            <img src="image/avather-img-2.webp" alt="Avatar Image">
+            <img src="image/avatar-7.png" alt="Avatar Image">
           </div>
           <div class="AvatarInfo">
-            <h2 class="fourthH">Meena Desai, Vadodara</h2>
-            <span>CEO & Founder</span>
+            <h2 class="fourthH">Md Ashik</h2>
+  
           </div>
         </div>
         <div>
@@ -741,15 +764,15 @@
       </div>
     </div>
     <div class="item">
-      <p class="therdH">As a business owner, I needed a reliable and aesthetically pleasing shading solution for our outdoor seating area. Asha Smart Shades provided us with a beautiful pergola system that perfectly fits our needs. The innovative design and high-quality materials have enhanced our outdoor space, making it more inviting for customers. Their after-sales support has also been excellent, ensuring that everything remains in perfect condition. I am thoroughly impressed with their products and service.</p>
+      <p class="therdH">Awesome customized awnings designed by Designer Asha industries Company. Very nice product & service was so fast with reasonable price. I am thrilled with my new & beautiful gallery awning. Thank you...</p>
       <div class="authorWraper">
         <div class="authorCard">
           <div class="AvatarIcon">
-            <img src="image/avatar-6.webp" alt="Avatar Image">
+            <img src="image/avatar-6.png" alt="Avatar Image">
           </div>
           <div class="AvatarInfo">
-            <h2 class="fourthH">Vikram Shah, Vadodara</h2>
-            <span>CEO & Founder</span>
+            <h2 class="fourthH">Moin Sindhi</h2>
+  
           </div>
         </div>
         <div>
@@ -1080,7 +1103,7 @@
         }
       });
     </script>
-
+<!-- 
 <script>
 
   var video = document.getElementById('video1');
@@ -1104,7 +1127,57 @@
       }
     }
     
+  </script> -->
+
+  <script>
+    // Load YouTube IFrame Player API
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  
+    var player; // Reference to YouTube Player instance
+    var button = document.getElementById('VideoPlayPause');
+    var playerWrapper = document.getElementById('player-wrapper');
+  
+    // YouTube Player API Ready Callback
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        videoId: 'h5NGNygvz2I', // Replace with your YouTube video ID
+        playerVars: {
+          autoplay: 0,
+          controls: 1, // Show controls
+          modestbranding: 1, // Reduce YouTube branding
+          rel: 0, // Disable related videos at the end
+        },
+        events: {
+          onStateChange: onPlayerStateChange,
+        },
+      });
+    }
+  
+    // Handle YouTube Player State Changes
+    function onPlayerStateChange(event) {
+      if (event.data === YT.PlayerState.PLAYING) {
+        button.classList.add('d-none');
+        playerWrapper.classList.add('playing');
+      } else if (event.data === YT.PlayerState.PAUSED || event.data === YT.PlayerState.ENDED) {
+        button.classList.remove('d-none');
+        playerWrapper.classList.remove('playing');
+      }
+    }
+  
+    // Custom Play/Pause Button Functionality
+    button.addEventListener('click', function () {
+      if (player.getPlayerState() === YT.PlayerState.PLAYING) {
+        player.pauseVideo();
+      } else {
+        player.playVideo();
+      }
+    });
   </script>
+  
+  
 
 <script>
 

@@ -164,6 +164,16 @@
 .postThubCard .fourthH {
   font-size: 17px;
 }
+
+.copyrightSection .container>.row{
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap-reverse;
+}
+
+.copyrightSection ul{
+  justify-content: center;
+}
  }
 
 @media (max-width: 991.98px) { 
@@ -200,14 +210,7 @@
 .Banner .owl-nav{
   display: none;
 }
-.copyrightSection .container>.row{
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap-reverse;
-}
-.copyrightSection ul{
-  justify-content: center;
-}
+
 
 #testimonial1 .item>.therdH{
   font-size: 26px;

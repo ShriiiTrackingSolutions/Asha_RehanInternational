@@ -237,9 +237,14 @@ img {
   top: 0; /* Slide into view */
 }
 
+.navbar {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 .navbar-brand {
   margin-right: 45px;
-  width: 10rem;
+  padding: 0;
+  width: 7rem;
 }
 
 .nav-link,
@@ -731,14 +736,13 @@ nav .modal-body .form-control::placeholder {
 
 /* banner css start */
 #ca1.owl-carousel .item {
-  padding: 190px 0;
+  padding: 246px 0px;
 }
 #ca1.owl-carousel .item1 {
-  background-image: linear-gradient(180deg, #0c1b3196 10%, #0a162ca1 80%),
-    url(../image/slider1-scaled-1.jpg);
-  background-position: center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  background-image:url(../image/slider1-scaled-1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .Banner .bannertext1 > span {
@@ -747,6 +751,23 @@ nav .modal-body .form-control::placeholder {
   margin: 0px 0px 25px 0px;
   padding: 8px 25px 8px 25px;
   background-color: #ffffff26;
+}
+
+.bannertext1{
+position: relative;
+isolation: isolate;
+}
+
+.backgroundcol .display-3{
+  font-size: 32px;
+}
+
+.backgroundcol{
+  display: inline-block;
+  padding: 20px;
+  background-color: #1b43859a;
+  max-width: 442px;
+  z-index: -1;
 }
 
 .Banner .owl-nav {
@@ -766,6 +787,9 @@ nav .modal-body .form-control::placeholder {
   line-height: 1.25;
   text-transform: capitalize;
   height: 50px;
+  outline: 5px solid #00000057;
+  border-radius: 1px;
+  background-color: #00000057 !important;
 }
 .Banner .owl-carousel .owl-nav button.owl-prev {
   padding: 0px 20px 0px 0px !important;
@@ -851,11 +875,10 @@ nav .modal-body .form-control::placeholder {
 }
 
 #ca1.owl-carousel .item2 {
-  background-image: linear-gradient(180deg, #09122099 10%, #081120b0 80%),
-    url(../image/tensile-structure.jpg);
-  background-position: center, center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
+  background-image: url(../image/tensile-structure.jpg);
+  background-position: center ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container-fluid {
@@ -1449,7 +1472,18 @@ nav .modal-body .form-control::placeholder {
 .review-card .profile {
   display: flex;
   align-items: center;
+  position: relative;
 }
+
+.review-card .profile .anchorAbsol{
+display: inline-block;
+position: absolute;
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+}
+
 .review-card .profile img {
   width: 50px;
   height: 50px;
@@ -1475,6 +1509,7 @@ nav .modal-body .form-control::placeholder {
   font-weight: 500;
   min-height: 118px;
   margin-bottom: 8px;
+  font-size: 14px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;

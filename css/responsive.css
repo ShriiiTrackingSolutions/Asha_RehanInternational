@@ -454,6 +454,9 @@ transform-origin: bottom right;
   .awningType .display-3 {
     font-size: 40px;
 }
+.backgroundcol .display-3 {
+  font-size: 26px;
+}
 
  }
 
@@ -461,6 +464,7 @@ transform-origin: bottom right;
 .circleAdd .clientCardCircle{
   display: none;
 }
+
   .progressBarWrap {
     scale: 0.5;
     transform-origin: bottom right;

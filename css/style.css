@@ -2847,6 +2847,9 @@ background-color: var(--blue);
   margin-left: auto;
   margin-right: auto;
 }
+.FaqForm form input::placeholder,.FaqForm textarea::placeholder{
+  color: #868686 !important;
+}
 
 /****************** 
 ***Services Page***  
